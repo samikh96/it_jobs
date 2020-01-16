@@ -1,0 +1,51 @@
+{
+  "revision_id": "158caf6c47507f8f45e7c9ac146540b56a08828b548a7c85a791083b6f9d62f3",
+  "name": "it_jobs_cookbook",
+  "run_list": [
+    "recipe[it_jobs_cookbook::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "it_jobs_cookbook": {
+      "version": "0.1.0",
+      "identifier": "059625840b64e19081616722525e5961ad7fe3ae",
+      "dotted_decimal_identifier": "1572462756848865.40674651988447838.98276057539502",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "9047375e0a2e74b1b2718a0dce585fd62548060f",
+        "working_tree_clean": false,
+        "published": false,
+        "synchronized_remote_branches": [
+
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "it_jobs_cookbook",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "it_jobs_cookbook (0.1.0)": [
+
+      ]
+    }
+  }
+}

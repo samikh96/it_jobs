@@ -1,0 +1,1213 @@
+I, [2020-01-16T16:33:11.053352 #8828]  INFO -- default-ubuntu-xenial64: -----> Creating <default-ubuntu-xenial64>...
+I, [2020-01-16T16:33:14.259602 #8828]  INFO -- default-ubuntu-xenial64: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2020-01-16T16:33:20.389333 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Importing base box 'ubuntu/xenial64'...
+I, [2020-01-16T16:33:28.752340 #8828]  INFO -- default-ubuntu-xenial64: [K==> default: Matching MAC address for NAT networking...
+I, [2020-01-16T16:33:28.998903 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Checking if box 'ubuntu/xenial64' version '20191204.0.0' is up to date...
+I, [2020-01-16T16:33:29.521989 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Setting the name of the VM: kitchen-it_jobs_chef-default-ubuntu-xenial64-d63ca0a9-9e9c-47c4-a85e-02820d3e5b61
+I, [2020-01-16T16:33:35.285209 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2020-01-16T16:33:35.447599 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Clearing any previously set network interfaces...
+I, [2020-01-16T16:33:35.577621 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Preparing network interfaces based on configuration...
+I, [2020-01-16T16:33:35.577890 #8828]  INFO -- default-ubuntu-xenial64:     default: Adapter 1: nat
+I, [2020-01-16T16:33:35.775043 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Forwarding ports...
+I, [2020-01-16T16:33:35.957449 #8828]  INFO -- default-ubuntu-xenial64:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2020-01-16T16:33:36.398629 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Running 'pre-boot' VM customizations...
+I, [2020-01-16T16:33:36.838675 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Booting VM...
+I, [2020-01-16T16:33:41.110308 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2020-01-16T16:33:41.644249 #8828]  INFO -- default-ubuntu-xenial64:     default: SSH address: 127.0.0.1:2200
+I, [2020-01-16T16:33:41.644347 #8828]  INFO -- default-ubuntu-xenial64:     default: SSH username: vagrant
+I, [2020-01-16T16:33:41.644396 #8828]  INFO -- default-ubuntu-xenial64:     default: SSH auth method: private key
+I, [2020-01-16T16:34:13.370010 #8828]  INFO -- default-ubuntu-xenial64:     default: 
+I, [2020-01-16T16:34:13.370150 #8828]  INFO -- default-ubuntu-xenial64:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2020-01-16T16:34:13.370274 #8828]  INFO -- default-ubuntu-xenial64:     default: this with a newly generated keypair for better security.
+I, [2020-01-16T16:34:15.677854 #8828]  INFO -- default-ubuntu-xenial64:     default: 
+I, [2020-01-16T16:34:15.677989 #8828]  INFO -- default-ubuntu-xenial64:     default: Inserting generated public key within guest...
+I, [2020-01-16T16:34:18.476967 #8828]  INFO -- default-ubuntu-xenial64:     default: Removing insecure key from the guest if it's present...
+I, [2020-01-16T16:34:18.873115 #8828]  INFO -- default-ubuntu-xenial64:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2020-01-16T16:34:20.167647 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Machine booted and ready!
+I, [2020-01-16T16:34:20.631122 #8828]  INFO -- default-ubuntu-xenial64: Got different reports about installed GuestAdditions version:
+I, [2020-01-16T16:34:20.631540 #8828]  INFO -- default-ubuntu-xenial64: Virtualbox on your host claims:   5.0.18
+I, [2020-01-16T16:34:20.631907 #8828]  INFO -- default-ubuntu-xenial64: VBoxService inside the vm claims: 5.1.38
+I, [2020-01-16T16:34:20.632243 #8828]  INFO -- default-ubuntu-xenial64: Going on, assuming VBoxService is correct...
+I, [2020-01-16T16:34:20.954141 #8828]  INFO -- default-ubuntu-xenial64: [default] A Virtualbox Guest Additions installation was found but no tools to rebuild or start them.
+I, [2020-01-16T16:34:21.190248 #8828]  INFO -- default-ubuntu-xenial64: Got different reports about installed GuestAdditions version:
+I, [2020-01-16T16:34:21.190517 #8828]  INFO -- default-ubuntu-xenial64: Virtualbox on your host claims:   5.0.18
+I, [2020-01-16T16:34:21.190804 #8828]  INFO -- default-ubuntu-xenial64: VBoxService inside the vm claims: 5.1.38
+I, [2020-01-16T16:34:21.191131 #8828]  INFO -- default-ubuntu-xenial64: Going on, assuming VBoxService is correct...
+I, [2020-01-16T16:34:26.018241 #8828]  INFO -- default-ubuntu-xenial64: Reading package lists...
+I, [2020-01-16T16:34:26.071580 #8828]  INFO -- default-ubuntu-xenial64: Building dependency tree...
+I, [2020-01-16T16:34:26.071703 #8828]  INFO -- default-ubuntu-xenial64: Reading state information...
+I, [2020-01-16T16:34:26.113803 #8828]  INFO -- default-ubuntu-xenial64: Package 'virtualbox-guest-dkms' is not installed, so not removed
+I, [2020-01-16T16:34:26.113937 #8828]  INFO -- default-ubuntu-xenial64: Package 'virtualbox-guest-x11' is not installed, so not removed
+I, [2020-01-16T16:34:26.114011 #8828]  INFO -- default-ubuntu-xenial64: The following packages will be REMOVED:
+I, [2020-01-16T16:34:26.114118 #8828]  INFO -- default-ubuntu-xenial64:   virtualbox-guest-utils*
+I, [2020-01-16T16:34:26.328775 #8828]  INFO -- default-ubuntu-xenial64: 0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+I, [2020-01-16T16:34:26.329173 #8828]  INFO -- default-ubuntu-xenial64: After this operation, 2,339 kB disk space will be freed.
+I, [2020-01-16T16:34:26.868435 #8828]  INFO -- default-ubuntu-xenial64: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54256 files and directories currently installed.)
+I, [2020-01-16T16:34:26.880251 #8828]  INFO -- default-ubuntu-xenial64: Removing virtualbox-guest-utils (5.1.38-dfsg-0ubuntu1.16.04.3) ...
+I, [2020-01-16T16:34:27.353909 #8828]  INFO -- default-ubuntu-xenial64: Purging configuration files for virtualbox-guest-utils (5.1.38-dfsg-0ubuntu1.16.04.3) ...
+I, [2020-01-16T16:34:28.157522 #8828]  INFO -- default-ubuntu-xenial64: Processing triggers for man-db (2.7.5-1) ...
+I, [2020-01-16T16:34:29.589924 #8828]  INFO -- default-ubuntu-xenial64: Reading package lists...
+I, [2020-01-16T16:34:29.644131 #8828]  INFO -- default-ubuntu-xenial64: Building dependency tree...
+I, [2020-01-16T16:34:29.644306 #8828]  INFO -- default-ubuntu-xenial64: Reading state information...
+I, [2020-01-16T16:34:29.676281 #8828]  INFO -- default-ubuntu-xenial64: linux-headers-4.4.0-170-generic is already the newest version (4.4.0-170.199).
+I, [2020-01-16T16:34:29.676449 #8828]  INFO -- default-ubuntu-xenial64: linux-headers-4.4.0-170-generic set to manually installed.
+I, [2020-01-16T16:34:29.676577 #8828]  INFO -- default-ubuntu-xenial64: The following additional packages will be installed:
+I, [2020-01-16T16:34:29.676698 #8828]  INFO -- default-ubuntu-xenial64:   binutils cpp cpp-5 fakeroot gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+I, [2020-01-16T16:34:29.676798 #8828]  INFO -- default-ubuntu-xenial64:   libc6-dev libcc1-0 libcilkrts5 libfakeroot libgcc-5-dev libgomp1 libisl15
+I, [2020-01-16T16:34:29.676901 #8828]  INFO -- default-ubuntu-xenial64:   libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0
+I, [2020-01-16T16:34:29.677003 #8828]  INFO -- default-ubuntu-xenial64:   linux-libc-dev make manpages-dev
+I, [2020-01-16T16:34:29.677127 #8828]  INFO -- default-ubuntu-xenial64: Suggested packages:
+I, [2020-01-16T16:34:29.677188 #8828]  INFO -- default-ubuntu-xenial64:   binutils-doc cpp-doc gcc-5-locales gcc-multilib autoconf automake libtool
+I, [2020-01-16T16:34:29.677254 #8828]  INFO -- default-ubuntu-xenial64:   flex bison gdb gcc-doc gcc-5-multilib gcc-5-doc libgcc1-dbg libgomp1-dbg
+I, [2020-01-16T16:34:29.677358 #8828]  INFO -- default-ubuntu-xenial64:   libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg libtsan0-dbg
+I, [2020-01-16T16:34:29.677463 #8828]  INFO -- default-ubuntu-xenial64:   libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg glibc-doc
+I, [2020-01-16T16:34:29.677587 #8828]  INFO -- default-ubuntu-xenial64:   make-doc
+I, [2020-01-16T16:34:29.677698 #8828]  INFO -- default-ubuntu-xenial64: The following NEW packages will be installed:
+I, [2020-01-16T16:34:29.677826 #8828]  INFO -- default-ubuntu-xenial64:   binutils cpp cpp-5 dkms fakeroot gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+I, [2020-01-16T16:34:29.677972 #8828]  INFO -- default-ubuntu-xenial64:   libc6-dev libcc1-0 libcilkrts5 libfakeroot libgcc-5-dev libgomp1 libisl15
+I, [2020-01-16T16:34:29.678024 #8828]  INFO -- default-ubuntu-xenial64:   libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0
+I, [2020-01-16T16:34:29.678069 #8828]  INFO -- default-ubuntu-xenial64:   linux-libc-dev make manpages-dev
+I, [2020-01-16T16:34:29.731722 #8828]  INFO -- default-ubuntu-xenial64: 0 upgraded, 27 newly installed, 0 to remove and 0 not upgraded.
+I, [2020-01-16T16:34:29.732005 #8828]  INFO -- default-ubuntu-xenial64: Need to get 27.9 MB of archives.
+I, [2020-01-16T16:34:29.732252 #8828]  INFO -- default-ubuntu-xenial64: After this operation, 101 MB of additional disk space will be used.
+I, [2020-01-16T16:34:29.732502 #8828]  INFO -- default-ubuntu-xenial64: Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmpc3 amd64 1.0.3-1 [39.7 kB]
+I, [2020-01-16T16:34:29.755485 #8828]  INFO -- default-ubuntu-xenial64: Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 binutils amd64 2.26.1-1ubuntu1~16.04.8 [2,312 kB]
+I, [2020-01-16T16:34:30.043093 #8828]  INFO -- default-ubuntu-xenial64: Get:3 http://archive.ubuntu.com/ubuntu xenial/main amd64 libisl15 amd64 0.16.1-1 [524 kB]
+I, [2020-01-16T16:34:30.098583 #8828]  INFO -- default-ubuntu-xenial64: Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 cpp-5 amd64 5.4.0-6ubuntu1~16.04.12 [7,783 kB]
+I, [2020-01-16T16:34:31.130209 #8828]  INFO -- default-ubuntu-xenial64: Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 cpp amd64 4:5.3.1-1ubuntu1 [27.7 kB]
+I, [2020-01-16T16:34:31.130591 #8828]  INFO -- default-ubuntu-xenial64: Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcc1-0 amd64 5.4.0-6ubuntu1~16.04.12 [38.8 kB]
+I, [2020-01-16T16:34:31.131484 #8828]  INFO -- default-ubuntu-xenial64: Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgomp1 amd64 5.4.0-6ubuntu1~16.04.12 [55.2 kB]
+I, [2020-01-16T16:34:31.142793 #8828]  INFO -- default-ubuntu-xenial64: Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libitm1 amd64 5.4.0-6ubuntu1~16.04.12 [27.4 kB]
+I, [2020-01-16T16:34:31.143009 #8828]  INFO -- default-ubuntu-xenial64: Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libatomic1 amd64 5.4.0-6ubuntu1~16.04.12 [8,892 B]
+I, [2020-01-16T16:34:31.143109 #8828]  INFO -- default-ubuntu-xenial64: Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasan2 amd64 5.4.0-6ubuntu1~16.04.12 [265 kB]
+I, [2020-01-16T16:34:31.178046 #8828]  INFO -- default-ubuntu-xenial64: Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblsan0 amd64 5.4.0-6ubuntu1~16.04.12 [105 kB]
+I, [2020-01-16T16:34:31.189653 #8828]  INFO -- default-ubuntu-xenial64: Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtsan0 amd64 5.4.0-6ubuntu1~16.04.12 [244 kB]
+I, [2020-01-16T16:34:31.222569 #8828]  INFO -- default-ubuntu-xenial64: Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libubsan0 amd64 5.4.0-6ubuntu1~16.04.12 [95.3 kB]
+I, [2020-01-16T16:34:31.233086 #8828]  INFO -- default-ubuntu-xenial64: Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcilkrts5 amd64 5.4.0-6ubuntu1~16.04.12 [40.0 kB]
+I, [2020-01-16T16:34:31.243889 #8828]  INFO -- default-ubuntu-xenial64: Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libmpx0 amd64 5.4.0-6ubuntu1~16.04.12 [9,762 B]
+I, [2020-01-16T16:34:31.244161 #8828]  INFO -- default-ubuntu-xenial64: Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libquadmath0 amd64 5.4.0-6ubuntu1~16.04.12 [131 kB]
+I, [2020-01-16T16:34:31.265330 #8828]  INFO -- default-ubuntu-xenial64: Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgcc-5-dev amd64 5.4.0-6ubuntu1~16.04.12 [2,239 kB]
+I, [2020-01-16T16:34:31.566129 #8828]  INFO -- default-ubuntu-xenial64: Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 gcc-5 amd64 5.4.0-6ubuntu1~16.04.12 [8,612 kB]
+I, [2020-01-16T16:34:32.743874 #8828]  INFO -- default-ubuntu-xenial64: Get:19 http://archive.ubuntu.com/ubuntu xenial/main amd64 gcc amd64 4:5.3.1-1ubuntu1 [5,244 B]
+I, [2020-01-16T16:34:32.773303 #8828]  INFO -- default-ubuntu-xenial64: Get:20 http://archive.ubuntu.com/ubuntu xenial/main amd64 make amd64 4.1-6 [151 kB]
+I, [2020-01-16T16:34:32.773497 #8828]  INFO -- default-ubuntu-xenial64: Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 dkms all 2.2.0.3-2ubuntu11.8 [66.4 kB]
+I, [2020-01-16T16:34:32.794822 #8828]  INFO -- default-ubuntu-xenial64: Get:22 http://archive.ubuntu.com/ubuntu xenial/main amd64 libfakeroot amd64 1.20.2-1ubuntu1 [25.5 kB]
+I, [2020-01-16T16:34:32.816374 #8828]  INFO -- default-ubuntu-xenial64: Get:23 http://archive.ubuntu.com/ubuntu xenial/main amd64 fakeroot amd64 1.20.2-1ubuntu1 [61.8 kB]
+I, [2020-01-16T16:34:32.827878 #8828]  INFO -- default-ubuntu-xenial64: Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc-dev-bin amd64 2.23-0ubuntu11 [68.5 kB]
+I, [2020-01-16T16:34:32.839793 #8828]  INFO -- default-ubuntu-xenial64: Err:25 http://security.ubuntu.com/ubuntu xenial-security/main amd64 linux-libc-dev amd64 4.4.0-170.199
+I, [2020-01-16T16:34:32.840157 #8828]  INFO -- default-ubuntu-xenial64:   404  Not Found [IP: 91.189.88.31 80]
+I, [2020-01-16T16:34:32.840325 #8828]  INFO -- default-ubuntu-xenial64: Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libc6-dev amd64 2.23-0ubuntu11 [2,086 kB]
+I, [2020-01-16T16:34:32.873929 #8828]  INFO -- default-ubuntu-xenial64: Err:25 http://security.ubuntu.com/ubuntu xenial-security/main amd64 linux-libc-dev amd64 4.4.0-170.199
+I, [2020-01-16T16:34:32.874078 #8828]  INFO -- default-ubuntu-xenial64:   404  Not Found [IP: 91.189.88.31 80]
+I, [2020-01-16T16:34:33.121005 #8828]  INFO -- default-ubuntu-xenial64: Get:27 http://archive.ubuntu.com/ubuntu xenial/main amd64 manpages-dev all 4.04-2 [2,048 kB]
+I, [2020-01-16T16:34:33.399887 #8828]  INFO -- default-ubuntu-xenial64: Fetched 27.1 MB in 3s (7,316 kB/s)
+I, [2020-01-16T16:34:33.400028 #8828]  INFO -- default-ubuntu-xenial64: E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_4.4.0-170.199_amd64.deb  404  Not Found [IP: 91.189.88.31 80]
+I, [2020-01-16T16:34:33.400145 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:34:33.400246 #8828]  INFO -- default-ubuntu-xenial64: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2020-01-16T16:34:33.540484 #8828]  INFO -- default-ubuntu-xenial64: Hit:1 http://archive.ubuntu.com/ubuntu xenial InRelease
+I, [2020-01-16T16:34:33.540807 #8828]  INFO -- default-ubuntu-xenial64: Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+I, [2020-01-16T16:34:33.607422 #8828]  INFO -- default-ubuntu-xenial64: Get:3 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+I, [2020-01-16T16:34:33.683632 #8828]  INFO -- default-ubuntu-xenial64: Get:4 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+I, [2020-01-16T16:34:33.845654 #8828]  INFO -- default-ubuntu-xenial64: Get:5 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [7,532 kB]
+I, [2020-01-16T16:34:34.339546 #8828]  INFO -- default-ubuntu-xenial64: Get:6 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [806 kB]
+I, [2020-01-16T16:34:35.616504 #8828]  INFO -- default-ubuntu-xenial64: Get:7 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en [308 kB]
+I, [2020-01-16T16:34:35.947065 #8828]  INFO -- default-ubuntu-xenial64: Get:8 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en [4,354 kB]
+I, [2020-01-16T16:34:36.011474 #8828]  INFO -- default-ubuntu-xenial64: Get:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [475 kB]
+I, [2020-01-16T16:34:36.504444 #8828]  INFO -- default-ubuntu-xenial64: Get:10 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [144 kB]
+I, [2020-01-16T16:34:36.537185 #8828]  INFO -- default-ubuntu-xenial64: Get:11 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en [106 kB]
+I, [2020-01-16T16:34:36.559151 #8828]  INFO -- default-ubuntu-xenial64: Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1,091 kB]
+I, [2020-01-16T16:34:36.663405 #8828]  INFO -- default-ubuntu-xenial64: Get:13 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en [195 kB]
+I, [2020-01-16T16:34:36.719340 #8828]  INFO -- default-ubuntu-xenial64: Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en [418 kB]
+I, [2020-01-16T16:34:36.772945 #8828]  INFO -- default-ubuntu-xenial64: Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [780 kB]
+I, [2020-01-16T16:34:36.869381 #8828]  INFO -- default-ubuntu-xenial64: Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en [327 kB]
+I, [2020-01-16T16:34:36.901842 #8828]  INFO -- default-ubuntu-xenial64: Get:17 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [5,728 B]
+I, [2020-01-16T16:34:36.912510 #8828]  INFO -- default-ubuntu-xenial64: Get:18 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [16.8 kB]
+I, [2020-01-16T16:34:36.912612 #8828]  INFO -- default-ubuntu-xenial64: Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en [8,468 B]
+I, [2020-01-16T16:34:36.912667 #8828]  INFO -- default-ubuntu-xenial64: Get:20 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7,280 B]
+I, [2020-01-16T16:34:36.912718 #8828]  INFO -- default-ubuntu-xenial64: Get:21 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en [4,456 B]
+I, [2020-01-16T16:34:36.912764 #8828]  INFO -- default-ubuntu-xenial64: Get:22 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en [2,708 B]
+I, [2020-01-16T16:34:36.912806 #8828]  INFO -- default-ubuntu-xenial64: Get:23 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8,064 B]
+I, [2020-01-16T16:34:36.912849 #8828]  INFO -- default-ubuntu-xenial64: Get:24 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en [4,328 B]
+I, [2020-01-16T16:34:40.611710 #8828]  INFO -- default-ubuntu-xenial64: Fetched 16.9 MB in 7s (2,404 kB/s)
+I, [2020-01-16T16:34:42.317887 #8828]  INFO -- default-ubuntu-xenial64: Reading package lists...
+I, [2020-01-16T16:34:42.769002 #8828]  INFO -- default-ubuntu-xenial64: Reading package lists...
+I, [2020-01-16T16:34:42.981532 #8828]  INFO -- default-ubuntu-xenial64: Building dependency tree...
+I, [2020-01-16T16:34:42.981665 #8828]  INFO -- default-ubuntu-xenial64: Reading state information...
+I, [2020-01-16T16:34:43.206263 #8828]  INFO -- default-ubuntu-xenial64: linux-headers-4.4.0-170-generic is already the newest version (4.4.0-170.199).
+I, [2020-01-16T16:34:43.206403 #8828]  INFO -- default-ubuntu-xenial64: linux-headers-4.4.0-170-generic set to manually installed.
+I, [2020-01-16T16:34:43.206480 #8828]  INFO -- default-ubuntu-xenial64: The following additional packages will be installed:
+I, [2020-01-16T16:34:43.206554 #8828]  INFO -- default-ubuntu-xenial64:   binutils cpp cpp-5 fakeroot gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+I, [2020-01-16T16:34:43.206632 #8828]  INFO -- default-ubuntu-xenial64:   libc6-dev libcc1-0 libcilkrts5 libfakeroot libgcc-5-dev libgomp1 libisl15
+I, [2020-01-16T16:34:43.206690 #8828]  INFO -- default-ubuntu-xenial64:   libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0
+I, [2020-01-16T16:34:43.206816 #8828]  INFO -- default-ubuntu-xenial64:   linux-libc-dev make manpages-dev
+I, [2020-01-16T16:34:43.207159 #8828]  INFO -- default-ubuntu-xenial64: Suggested packages:
+I, [2020-01-16T16:34:43.207265 #8828]  INFO -- default-ubuntu-xenial64:   binutils-doc cpp-doc gcc-5-locales gcc-multilib autoconf automake libtool
+I, [2020-01-16T16:34:43.207332 #8828]  INFO -- default-ubuntu-xenial64:   flex bison gdb gcc-doc gcc-5-multilib gcc-5-doc libgcc1-dbg libgomp1-dbg
+I, [2020-01-16T16:34:43.207399 #8828]  INFO -- default-ubuntu-xenial64:   libitm1-dbg libatomic1-dbg libasan2-dbg liblsan0-dbg libtsan0-dbg
+I, [2020-01-16T16:34:43.207461 #8828]  INFO -- default-ubuntu-xenial64:   libubsan0-dbg libcilkrts5-dbg libmpx0-dbg libquadmath0-dbg glibc-doc
+I, [2020-01-16T16:34:43.207521 #8828]  INFO -- default-ubuntu-xenial64:   make-doc
+I, [2020-01-16T16:34:43.207578 #8828]  INFO -- default-ubuntu-xenial64: The following NEW packages will be installed:
+I, [2020-01-16T16:34:43.207642 #8828]  INFO -- default-ubuntu-xenial64:   binutils cpp cpp-5 dkms fakeroot gcc gcc-5 libasan2 libatomic1 libc-dev-bin
+I, [2020-01-16T16:34:43.208260 #8828]  INFO -- default-ubuntu-xenial64:   libc6-dev libcc1-0 libcilkrts5 libfakeroot libgcc-5-dev libgomp1 libisl15
+I, [2020-01-16T16:34:43.208369 #8828]  INFO -- default-ubuntu-xenial64:   libitm1 liblsan0 libmpc3 libmpx0 libquadmath0 libtsan0 libubsan0
+I, [2020-01-16T16:34:43.208420 #8828]  INFO -- default-ubuntu-xenial64:   linux-libc-dev make manpages-dev
+I, [2020-01-16T16:34:43.283580 #8828]  INFO -- default-ubuntu-xenial64: 0 upgraded, 27 newly installed, 0 to remove and 21 not upgraded.
+I, [2020-01-16T16:34:43.283796 #8828]  INFO -- default-ubuntu-xenial64: Need to get 844 kB/27.9 MB of archives.
+I, [2020-01-16T16:34:43.283976 #8828]  INFO -- default-ubuntu-xenial64: After this operation, 101 MB of additional disk space will be used.
+I, [2020-01-16T16:34:43.284155 #8828]  INFO -- default-ubuntu-xenial64: Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-171.200 [844 kB]
+I, [2020-01-16T16:34:43.865132 #8828]  INFO -- default-ubuntu-xenial64: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+I, [2020-01-16T16:34:43.897893 #8828]  INFO -- default-ubuntu-xenial64: Fetched 844 kB in 0s (1,956 kB/s)
+I, [2020-01-16T16:34:43.930170 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libmpc3:amd64.
+I, [2020-01-16T16:34:43.961902 #8828]  INFO -- default-ubuntu-xenial64: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54243 files and directories currently installed.)
+I, [2020-01-16T16:34:43.962035 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libmpc3_1.0.3-1_amd64.deb ...
+I, [2020-01-16T16:34:43.962109 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libmpc3:amd64 (1.0.3-1) ...
+I, [2020-01-16T16:34:43.983122 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package binutils.
+I, [2020-01-16T16:34:43.983267 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../binutils_2.26.1-1ubuntu1~16.04.8_amd64.deb ...
+I, [2020-01-16T16:34:44.011934 #8828]  INFO -- default-ubuntu-xenial64: Unpacking binutils (2.26.1-1ubuntu1~16.04.8) ...
+I, [2020-01-16T16:34:44.366010 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libisl15:amd64.
+I, [2020-01-16T16:34:44.366176 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libisl15_0.16.1-1_amd64.deb ...
+I, [2020-01-16T16:34:44.366274 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libisl15:amd64 (0.16.1-1) ...
+I, [2020-01-16T16:34:44.451999 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package cpp-5.
+I, [2020-01-16T16:34:44.452153 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../cpp-5_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:44.452283 #8828]  INFO -- default-ubuntu-xenial64: Unpacking cpp-5 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:45.929476 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package cpp.
+I, [2020-01-16T16:34:45.940614 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../cpp_4%3a5.3.1-1ubuntu1_amd64.deb ...
+I, [2020-01-16T16:34:45.940906 #8828]  INFO -- default-ubuntu-xenial64: Unpacking cpp (4:5.3.1-1ubuntu1) ...
+I, [2020-01-16T16:34:46.015650 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libcc1-0:amd64.
+I, [2020-01-16T16:34:46.015948 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libcc1-0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.027409 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.091329 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libgomp1:amd64.
+I, [2020-01-16T16:34:46.091630 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libgomp1_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.091879 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libgomp1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.167441 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libitm1:amd64.
+I, [2020-01-16T16:34:46.178727 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libitm1_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.179028 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libitm1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.235591 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libatomic1:amd64.
+I, [2020-01-16T16:34:46.247885 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libatomic1_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.259760 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libatomic1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.293557 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libasan2:amd64.
+I, [2020-01-16T16:34:46.293687 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libasan2_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.293750 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libasan2:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.347922 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package liblsan0:amd64.
+I, [2020-01-16T16:34:46.348029 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../liblsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.348081 #8828]  INFO -- default-ubuntu-xenial64: Unpacking liblsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.401729 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libtsan0:amd64.
+I, [2020-01-16T16:34:46.401927 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libtsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.402009 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libtsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.455471 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libubsan0:amd64.
+I, [2020-01-16T16:34:46.455600 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libubsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.455671 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libubsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.487711 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libcilkrts5:amd64.
+I, [2020-01-16T16:34:46.487877 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libcilkrts5_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.498676 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.531723 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libmpx0:amd64.
+I, [2020-01-16T16:34:46.531954 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libmpx0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.532086 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libmpx0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.554084 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libquadmath0:amd64.
+I, [2020-01-16T16:34:46.564875 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libquadmath0_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.565048 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.596927 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libgcc-5-dev:amd64.
+I, [2020-01-16T16:34:46.597167 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libgcc-5-dev_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.597271 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:46.973999 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package gcc-5.
+I, [2020-01-16T16:34:46.974159 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../gcc-5_5.4.0-6ubuntu1~16.04.12_amd64.deb ...
+I, [2020-01-16T16:34:46.974275 #8828]  INFO -- default-ubuntu-xenial64: Unpacking gcc-5 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:48.385975 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package gcc.
+I, [2020-01-16T16:34:48.396667 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../gcc_4%3a5.3.1-1ubuntu1_amd64.deb ...
+I, [2020-01-16T16:34:48.396836 #8828]  INFO -- default-ubuntu-xenial64: Unpacking gcc (4:5.3.1-1ubuntu1) ...
+I, [2020-01-16T16:34:48.418174 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package make.
+I, [2020-01-16T16:34:48.418282 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../archives/make_4.1-6_amd64.deb ...
+I, [2020-01-16T16:34:48.428960 #8828]  INFO -- default-ubuntu-xenial64: Unpacking make (4.1-6) ...
+I, [2020-01-16T16:34:48.461160 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package dkms.
+I, [2020-01-16T16:34:48.471889 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../dkms_2.2.0.3-2ubuntu11.8_all.deb ...
+I, [2020-01-16T16:34:48.482506 #8828]  INFO -- default-ubuntu-xenial64: Unpacking dkms (2.2.0.3-2ubuntu11.8) ...
+I, [2020-01-16T16:34:48.503605 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libfakeroot:amd64.
+I, [2020-01-16T16:34:48.515770 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libfakeroot_1.20.2-1ubuntu1_amd64.deb ...
+I, [2020-01-16T16:34:48.515907 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libfakeroot:amd64 (1.20.2-1ubuntu1) ...
+I, [2020-01-16T16:34:48.537264 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package fakeroot.
+I, [2020-01-16T16:34:48.539470 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../fakeroot_1.20.2-1ubuntu1_amd64.deb ...
+I, [2020-01-16T16:34:48.551069 #8828]  INFO -- default-ubuntu-xenial64: Unpacking fakeroot (1.20.2-1ubuntu1) ...
+I, [2020-01-16T16:34:48.572355 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libc-dev-bin.
+I, [2020-01-16T16:34:48.572513 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libc-dev-bin_2.23-0ubuntu11_amd64.deb ...
+I, [2020-01-16T16:34:48.572639 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libc-dev-bin (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:48.593631 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package linux-libc-dev:amd64.
+I, [2020-01-16T16:34:48.606162 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../linux-libc-dev_4.4.0-171.200_amd64.deb ...
+I, [2020-01-16T16:34:48.619052 #8828]  INFO -- default-ubuntu-xenial64: Unpacking linux-libc-dev:amd64 (4.4.0-171.200) ...
+I, [2020-01-16T16:34:48.801607 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package libc6-dev:amd64.
+I, [2020-01-16T16:34:48.801775 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../libc6-dev_2.23-0ubuntu11_amd64.deb ...
+I, [2020-01-16T16:34:48.801848 #8828]  INFO -- default-ubuntu-xenial64: Unpacking libc6-dev:amd64 (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:49.250543 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package manpages-dev.
+I, [2020-01-16T16:34:49.261300 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../manpages-dev_4.04-2_all.deb ...
+I, [2020-01-16T16:34:49.261482 #8828]  INFO -- default-ubuntu-xenial64: Unpacking manpages-dev (4.04-2) ...
+I, [2020-01-16T16:34:49.616268 #8828]  INFO -- default-ubuntu-xenial64: Processing triggers for libc-bin (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:49.896136 #8828]  INFO -- default-ubuntu-xenial64: Processing triggers for man-db (2.7.5-1) ...
+I, [2020-01-16T16:34:53.465296 #8828]  INFO -- default-ubuntu-xenial64: Setting up libmpc3:amd64 (1.0.3-1) ...
+I, [2020-01-16T16:34:53.488756 #8828]  INFO -- default-ubuntu-xenial64: Setting up binutils (2.26.1-1ubuntu1~16.04.8) ...
+I, [2020-01-16T16:34:53.500089 #8828]  INFO -- default-ubuntu-xenial64: Setting up libisl15:amd64 (0.16.1-1) ...
+I, [2020-01-16T16:34:53.513988 #8828]  INFO -- default-ubuntu-xenial64: Setting up cpp-5 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.527632 #8828]  INFO -- default-ubuntu-xenial64: Setting up cpp (4:5.3.1-1ubuntu1) ...
+I, [2020-01-16T16:34:53.594009 #8828]  INFO -- default-ubuntu-xenial64: Setting up libcc1-0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.604971 #8828]  INFO -- default-ubuntu-xenial64: Setting up libgomp1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.605294 #8828]  INFO -- default-ubuntu-xenial64: Setting up libitm1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.616663 #8828]  INFO -- default-ubuntu-xenial64: Setting up libatomic1:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.628553 #8828]  INFO -- default-ubuntu-xenial64: Setting up libasan2:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.628900 #8828]  INFO -- default-ubuntu-xenial64: Setting up liblsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.650809 #8828]  INFO -- default-ubuntu-xenial64: Setting up libtsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.662702 #8828]  INFO -- default-ubuntu-xenial64: Setting up libubsan0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.663040 #8828]  INFO -- default-ubuntu-xenial64: Setting up libcilkrts5:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.674688 #8828]  INFO -- default-ubuntu-xenial64: Setting up libmpx0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.675361 #8828]  INFO -- default-ubuntu-xenial64: Setting up libquadmath0:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.700242 #8828]  INFO -- default-ubuntu-xenial64: Setting up libgcc-5-dev:amd64 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.700716 #8828]  INFO -- default-ubuntu-xenial64: Setting up gcc-5 (5.4.0-6ubuntu1~16.04.12) ...
+I, [2020-01-16T16:34:53.712856 #8828]  INFO -- default-ubuntu-xenial64: Setting up gcc (4:5.3.1-1ubuntu1) ...
+I, [2020-01-16T16:34:53.746046 #8828]  INFO -- default-ubuntu-xenial64: Setting up make (4.1-6) ...
+I, [2020-01-16T16:34:53.746250 #8828]  INFO -- default-ubuntu-xenial64: Setting up dkms (2.2.0.3-2ubuntu11.8) ...
+I, [2020-01-16T16:34:54.025228 #8828]  INFO -- default-ubuntu-xenial64: Setting up libfakeroot:amd64 (1.20.2-1ubuntu1) ...
+I, [2020-01-16T16:34:54.025443 #8828]  INFO -- default-ubuntu-xenial64: Setting up fakeroot (1.20.2-1ubuntu1) ...
+I, [2020-01-16T16:34:54.025538 #8828]  INFO -- default-ubuntu-xenial64: update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+I, [2020-01-16T16:34:54.035959 #8828]  INFO -- default-ubuntu-xenial64: Setting up libc-dev-bin (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:54.046668 #8828]  INFO -- default-ubuntu-xenial64: Setting up linux-libc-dev:amd64 (4.4.0-171.200) ...
+I, [2020-01-16T16:34:54.057134 #8828]  INFO -- default-ubuntu-xenial64: Setting up libc6-dev:amd64 (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:54.057247 #8828]  INFO -- default-ubuntu-xenial64: Setting up manpages-dev (4.04-2) ...
+I, [2020-01-16T16:34:54.057303 #8828]  INFO -- default-ubuntu-xenial64: Processing triggers for libc-bin (2.23-0ubuntu11) ...
+I, [2020-01-16T16:34:55.843417 #8828]  INFO -- default-ubuntu-xenial64: Copy iso file C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+I, [2020-01-16T16:34:59.187956 #8828]  INFO -- default-ubuntu-xenial64: Mounting Virtualbox Guest Additions ISO to: /mnt
+I, [2020-01-16T16:34:59.263438 #8828]  INFO -- default-ubuntu-xenial64: mount: /dev/loop0 is write-protected, mounting read-only
+I, [2020-01-16T16:34:59.371309 #8828]  INFO -- default-ubuntu-xenial64: Installing Virtualbox Guest Additions 5.2.34 - guest version is 5.1.38
+I, [2020-01-16T16:34:59.619035 #8828]  INFO -- default-ubuntu-xenial64: Verifying archive integrity... All good.
+I, [2020-01-16T16:35:00.410074 #8828]  INFO -- default-ubuntu-xenial64: Uncompressing VirtualBox 5.2.34 Guest Additions for Linux........
+I, [2020-01-16T16:35:00.421634 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions installer
+I, [2020-01-16T16:35:00.464992 #8828]  INFO -- default-ubuntu-xenial64: Copying additional installer modules ...
+I, [2020-01-16T16:35:02.257233 #8828]  INFO -- default-ubuntu-xenial64: Installing additional modules ...
+I, [2020-01-16T16:35:03.989043 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+I, [2020-01-16T16:35:03.989180 #8828]  INFO -- default-ubuntu-xenial64: modules.  This may take a while.
+I, [2020-01-16T16:35:03.989252 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions: To build modules for other installed kernels, run
+I, [2020-01-16T16:35:03.989336 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+I, [2020-01-16T16:35:04.010539 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions: Building the modules for kernel 4.4.0-170-generic.
+I, [2020-01-16T16:35:42.332070 #8828]  INFO -- default-ubuntu-xenial64: update-initramfs: Generating /boot/initrd.img-4.4.0-170-generic
+I, [2020-01-16T16:35:53.540640 #8828]  INFO -- default-ubuntu-xenial64: VirtualBox Guest Additions: Starting.
+I, [2020-01-16T16:35:56.158771 #8828]  INFO -- default-ubuntu-xenial64: Unmounting Virtualbox Guest Additions ISO from: /mnt
+I, [2020-01-16T16:35:57.469573 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Checking for guest additions in VM...
+I, [2020-01-16T16:35:57.588183 #8828]  INFO -- default-ubuntu-xenial64: ==> default: [vagrant-hostsupdater] Checking for host entries
+I, [2020-01-16T16:35:57.588411 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Setting hostname...
+I, [2020-01-16T16:35:59.467462 #8828]  INFO -- default-ubuntu-xenial64: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2020-01-16T16:36:06.663503 #8828]  INFO -- default-ubuntu-xenial64: [SSH] Established
+I, [2020-01-16T16:36:06.664276 #8828]  INFO -- default-ubuntu-xenial64: Vagrant instance <default-ubuntu-xenial64> created.
+I, [2020-01-16T16:36:06.666007 #8828]  INFO -- default-ubuntu-xenial64: Finished creating <default-ubuntu-xenial64> (2m55.61s).
+I, [2020-01-16T16:36:06.666263 #8828]  INFO -- default-ubuntu-xenial64: -----> Converging <default-ubuntu-xenial64>...
+I, [2020-01-16T16:36:06.672890 #8828]  INFO -- default-ubuntu-xenial64: Preparing files for transfer
+I, [2020-01-16T16:36:06.673780 #8828]  INFO -- default-ubuntu-xenial64: Installing cookbooks for Policyfile C:/Users/Chef/it_job/cookbooks/it_jobs_chef/Policyfile.rb using `chef install`
+I, [2020-01-16T16:36:14.203659 #8828]  INFO -- default-ubuntu-xenial64: Installing cookbooks from lock
+I, [2020-01-16T16:36:14.215042 #8828]  INFO -- default-ubuntu-xenial64: Installing it_jobs_cookbook 0.1.0
+I, [2020-01-16T16:36:14.226910 #8828]  INFO -- default-ubuntu-xenial64: Preparing dna.json
+I, [2020-01-16T16:36:14.228977 #8828]  INFO -- default-ubuntu-xenial64: Exporting cookbook dependencies from Policyfile C:/Users/MOHAMM~1/AppData/Local/Temp/default-ubuntu-xenial64-sandbox-20200116-8828-1jp0794...
+I, [2020-01-16T16:36:24.466895 #8828]  INFO -- default-ubuntu-xenial64: Exported policy 'it_jobs_cookbook' to C:/Users/MOHAMM~1/AppData/Local/Temp/default-ubuntu-xenial64-sandbox-20200116-8828-1jp0794
+I, [2020-01-16T16:36:24.467244 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:36:24.467487 #8828]  INFO -- default-ubuntu-xenial64: To converge this system with the exported policy, run:
+I, [2020-01-16T16:36:24.467707 #8828]  INFO -- default-ubuntu-xenial64:   cd C:/Users/MOHAMM~1/AppData/Local/Temp/default-ubuntu-xenial64-sandbox-20200116-8828-1jp0794
+I, [2020-01-16T16:36:24.467933 #8828]  INFO -- default-ubuntu-xenial64:   chef-client -z
+I, [2020-01-16T16:36:24.500944 #8828]  INFO -- default-ubuntu-xenial64: Removing non-cookbook files before transfer
+I, [2020-01-16T16:36:24.503053 #8828]  INFO -- default-ubuntu-xenial64: Preparing nodes
+I, [2020-01-16T16:36:24.551731 #8828]  INFO -- default-ubuntu-xenial64: Preparing validation.pem
+I, [2020-01-16T16:36:24.556960 #8828]  INFO -- default-ubuntu-xenial64: Preparing client.rb
+I, [2020-01-16T16:36:24.624500 #8828]  INFO -- default-ubuntu-xenial64: -----> Installing Chef install only if missing package
+I, [2020-01-16T16:36:24.625343 #8828]  INFO -- default-ubuntu-xenial64: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2020-01-16T16:36:24.625996 #8828]  INFO -- default-ubuntu-xenial64: Trying wget...
+I, [2020-01-16T16:36:24.692006 #8828]  INFO -- default-ubuntu-xenial64: Download complete.
+I, [2020-01-16T16:36:24.724787 #8828]  INFO -- default-ubuntu-xenial64: ubuntu 16.04 x86_64
+I, [2020-01-16T16:36:24.736743 #8828]  INFO -- default-ubuntu-xenial64: Getting information for chef stable  for ubuntu...
+I, [2020-01-16T16:36:24.737047 #8828]  INFO -- default-ubuntu-xenial64: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=16.04&m=x86_64
+I, [2020-01-16T16:36:24.737214 #8828]  INFO -- default-ubuntu-xenial64:   to file /tmp/install.sh.17576/metadata.txt
+I, [2020-01-16T16:36:24.737990 #8828]  INFO -- default-ubuntu-xenial64: trying wget...
+I, [2020-01-16T16:36:24.783411 #8828]  INFO -- default-ubuntu-xenial64: sha1	3a4bdede928fe5393f5c57c562039e90f59027d1
+I, [2020-01-16T16:36:24.784745 #8828]  INFO -- default-ubuntu-xenial64: sha256	4a1cdf3de1f33e09bb8e4c7ffc31fb8d6c853858894da7eed0e5ee5a6abd8309
+I, [2020-01-16T16:36:24.785580 #8828]  INFO -- default-ubuntu-xenial64: url	https://packages.chef.io/files/stable/chef/15.6.10/ubuntu/16.04/chef_15.6.10-1_amd64.deb
+I, [2020-01-16T16:36:24.786393 #8828]  INFO -- default-ubuntu-xenial64: version	15.6.10
+I, [2020-01-16T16:36:24.800203 #8828]  INFO -- default-ubuntu-xenial64: downloaded metadata file looks valid...
+I, [2020-01-16T16:36:24.822492 #8828]  INFO -- default-ubuntu-xenial64: downloading https://packages.chef.io/files/stable/chef/15.6.10/ubuntu/16.04/chef_15.6.10-1_amd64.deb
+I, [2020-01-16T16:36:24.822744 #8828]  INFO -- default-ubuntu-xenial64:   to file /tmp/install.sh.17576/chef_15.6.10-1_amd64.deb
+I, [2020-01-16T16:36:24.823302 #8828]  INFO -- default-ubuntu-xenial64: trying wget...
+I, [2020-01-16T16:36:29.106186 #8828]  INFO -- default-ubuntu-xenial64: Comparing checksum with sha256sum...
+I, [2020-01-16T16:36:29.418187 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:36:29.418311 #8828]  INFO -- default-ubuntu-xenial64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-01-16T16:36:29.418385 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:36:29.418434 #8828]  INFO -- default-ubuntu-xenial64: You are installing a package without a version pin.  If you are installing
+I, [2020-01-16T16:36:29.418481 #8828]  INFO -- default-ubuntu-xenial64: on production servers via an automated process this is DANGEROUS and you will
+I, [2020-01-16T16:36:29.418527 #8828]  INFO -- default-ubuntu-xenial64: be upgraded without warning on new releases, even to new major releases.
+I, [2020-01-16T16:36:29.418573 #8828]  INFO -- default-ubuntu-xenial64: Letting the version float is only appropriate in desktop, test, development or
+I, [2020-01-16T16:36:29.418618 #8828]  INFO -- default-ubuntu-xenial64: CI/CD environments.
+I, [2020-01-16T16:36:29.418662 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:36:29.418706 #8828]  INFO -- default-ubuntu-xenial64: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-01-16T16:36:29.418750 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:36:29.418793 #8828]  INFO -- default-ubuntu-xenial64: Installing chef 
+I, [2020-01-16T16:36:29.418835 #8828]  INFO -- default-ubuntu-xenial64: installing with dpkg...
+I, [2020-01-16T16:36:29.451400 #8828]  INFO -- default-ubuntu-xenial64: Selecting previously unselected package chef.
+I, [2020-01-16T16:36:29.472950 #8828]  INFO -- default-ubuntu-xenial64: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58225 files and directories currently installed.)
+I, [2020-01-16T16:36:29.484608 #8828]  INFO -- default-ubuntu-xenial64: Preparing to unpack .../chef_15.6.10-1_amd64.deb ...
+I, [2020-01-16T16:36:29.484850 #8828]  INFO -- default-ubuntu-xenial64: Unpacking chef (15.6.10-1) ...
+I, [2020-01-16T16:36:34.720737 #8828]  INFO -- default-ubuntu-xenial64: Setting up chef (15.6.10-1) ...
+I, [2020-01-16T16:36:34.869849 #8828]  INFO -- default-ubuntu-xenial64: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2020-01-16T16:36:34.962892 #8828]  INFO -- default-ubuntu-xenial64: Transferring files to <default-ubuntu-xenial64>
+I, [2020-01-16T16:36:38.606234 #8828]  INFO -- default-ubuntu-xenial64: +---------------------------------------------+
+I, [2020-01-16T16:36:38.606416 #8828]  INFO -- default-ubuntu-xenial64: [32m✔[0m 2 product licenses accepted.
+I, [2020-01-16T16:36:38.606592 #8828]  INFO -- default-ubuntu-xenial64: +---------------------------------------------+
+I, [2020-01-16T16:36:38.854401 #8828]  INFO -- default-ubuntu-xenial64: Starting Chef Infra Client, version 15.6.10
+I, [2020-01-16T16:36:40.726386 #8828]  INFO -- default-ubuntu-xenial64: Creating a new client identity for default-ubuntu-xenial64 using the validator key.
+I, [2020-01-16T16:36:40.813937 #8828]  INFO -- default-ubuntu-xenial64: Using policy 'it_jobs_cookbook' at revision '158caf6c47507f8f45e7c9ac146540b56a08828b548a7c85a791083b6f9d62f3'
+I, [2020-01-16T16:36:40.824744 #8828]  INFO -- default-ubuntu-xenial64: resolving cookbooks for run list: ["it_jobs_cookbook::default@0.1.0 (0596258)"]
+I, [2020-01-16T16:36:40.867344 #8828]  INFO -- default-ubuntu-xenial64: Synchronizing Cookbooks:
+I, [2020-01-16T16:36:40.931723 #8828]  INFO -- default-ubuntu-xenial64:   - it_jobs_cookbook (0.1.0)
+I, [2020-01-16T16:36:40.931977 #8828]  INFO -- default-ubuntu-xenial64: Installing Cookbook Gems:
+I, [2020-01-16T16:36:40.932173 #8828]  INFO -- default-ubuntu-xenial64: Compiling Cookbooks...
+I, [2020-01-16T16:36:40.943125 #8828]  INFO -- default-ubuntu-xenial64: Converging 8 resources
+I, [2020-01-16T16:36:40.943413 #8828]  INFO -- default-ubuntu-xenial64: Recipe: it_jobs_cookbook::default
+I, [2020-01-16T16:36:40.943637 #8828]  INFO -- default-ubuntu-xenial64:   * apt_update[update] action update
+I, [2020-01-16T16:36:40.944244 #8828]  INFO -- default-ubuntu-xenial64:     - force update new lists of packages
+I, [2020-01-16T16:36:40.944500 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2020-01-16T16:36:40.944772 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2020-01-16T16:36:40.957433 #8828]  INFO -- default-ubuntu-xenial64:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2020-01-16T16:36:45.280598 #8828]  INFO -- default-ubuntu-xenial64:     * execute[apt-get -q update] action run
+I, [2020-01-16T16:36:45.280989 #8828]  INFO -- default-ubuntu-xenial64:       - execute ["apt-get", "-q", "update"]
+I, [2020-01-16T16:36:45.281437 #8828]  INFO -- default-ubuntu-xenial64:   
+I, [2020-01-16T16:37:09.163685 #8828]  INFO -- default-ubuntu-xenial64:   * apt_package[python3-dev] action install
+I, [2020-01-16T16:37:09.164799 #8828]  INFO -- default-ubuntu-xenial64:     - install version 3.5.1-3 of package python3-dev
+I, [2020-01-16T16:37:21.990506 #8828]  INFO -- default-ubuntu-xenial64:   * apt_package[python3-pip] action install
+I, [2020-01-16T16:37:21.991525 #8828]  INFO -- default-ubuntu-xenial64:     - install version 8.1.1-2ubuntu0.4 of package python3-pip
+I, [2020-01-16T16:37:22.003128 #8828]  INFO -- default-ubuntu-xenial64:   * remote_directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch] action create
+I, [2020-01-16T16:37:22.003895 #8828]  INFO -- default-ubuntu-xenial64:     - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch
+I, [2020-01-16T16:37:22.004710 #8828]  INFO -- default-ubuntu-xenial64:   Recipe: <Dynamically Defined Resource>
+I, [2020-01-16T16:37:22.027547 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config.ini] action create
+I, [2020-01-16T16:37:22.052300 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config.ini
+I, [2020-01-16T16:37:22.052639 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config.ini from none to 709a68
+I, [2020-01-16T16:37:22.052728 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config.ini	2020-01-16 16:37:21.018958000 +0000
+I, [2020-01-16T16:37:22.052785 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-config20200116-17667-1v1koa7.ini	2020-01-16 16:37:21.018958000 +0000
+I, [2020-01-16T16:37:22.052832 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,11 @@
+I, [2020-01-16T16:37:22.052902 #8828]  INFO -- default-ubuntu-xenial64:       +[itjobswatchurls]
+I, [2020-01-16T16:37:22.052955 #8828]  INFO -- default-ubuntu-xenial64:       +itjobswatch_home_page_url=https://www.itjobswatch.co.uk/
+I, [2020-01-16T16:37:22.053001 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.053068 #8828]  INFO -- default-ubuntu-xenial64:       +[environment]
+I, [2020-01-16T16:37:22.053128 #8828]  INFO -- default-ubuntu-xenial64:       +; use 'live' for ItJobsWatch web call and 'test' to use stubs
+I, [2020-01-16T16:37:22.053176 #8828]  INFO -- default-ubuntu-xenial64:       +test_env=test
+I, [2020-01-16T16:37:22.053220 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.053294 #8828]  INFO -- default-ubuntu-xenial64:       +[itjobswatch_test_data]
+I, [2020-01-16T16:37:22.053346 #8828]  INFO -- default-ubuntu-xenial64:       +; The below link is for the top 30 capture
+I, [2020-01-16T16:37:22.053838 #8828]  INFO -- default-ubuntu-xenial64:       +itjobswatch_home_page_test_file=/tests/test_resources/itjobswatch_home_page_stub.html
+I, [2020-01-16T16:37:22.053980 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.065145 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/requirements.txt] action create
+I, [2020-01-16T16:37:22.065472 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/requirements.txt
+I, [2020-01-16T16:37:22.065760 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/requirements.txt from none to dba311
+I, [2020-01-16T16:37:22.066140 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/requirements.txt	2020-01-16 16:37:21.062979999 +0000
+I, [2020-01-16T16:37:22.066273 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-requirements20200116-17667-16za2f0.txt	2020-01-16 16:37:21.062979999 +0000
+I, [2020-01-16T16:37:22.066344 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,20 @@
+I, [2020-01-16T16:37:22.066404 #8828]  INFO -- default-ubuntu-xenial64:       +atomicwrites==1.3.0
+I, [2020-01-16T16:37:22.066460 #8828]  INFO -- default-ubuntu-xenial64:       +attrs==19.1.0
+I, [2020-01-16T16:37:22.066817 #8828]  INFO -- default-ubuntu-xenial64:       +beautifulsoup4==4.8.0
+I, [2020-01-16T16:37:22.066911 #8828]  INFO -- default-ubuntu-xenial64:       +certifi==2019.6.16
+I, [2020-01-16T16:37:22.066990 #8828]  INFO -- default-ubuntu-xenial64:       +chardet==3.0.4
+I, [2020-01-16T16:37:22.067062 #8828]  INFO -- default-ubuntu-xenial64:       +idna==2.8
+I, [2020-01-16T16:37:22.067151 #8828]  INFO -- default-ubuntu-xenial64:       +importlib-metadata==0.19
+I, [2020-01-16T16:37:22.067217 #8828]  INFO -- default-ubuntu-xenial64:       +more-itertools==7.2.0
+I, [2020-01-16T16:37:22.067289 #8828]  INFO -- default-ubuntu-xenial64:       +packaging==19.1
+I, [2020-01-16T16:37:22.067356 #8828]  INFO -- default-ubuntu-xenial64:       +pluggy==0.12.0
+I, [2020-01-16T16:37:22.067473 #8828]  INFO -- default-ubuntu-xenial64:       +py==1.8.0
+I, [2020-01-16T16:37:22.067536 #8828]  INFO -- default-ubuntu-xenial64:       +pyparsing==2.4.2
+I, [2020-01-16T16:37:22.067630 #8828]  INFO -- default-ubuntu-xenial64:       +pytest==5.1.0
+I, [2020-01-16T16:37:22.067690 #8828]  INFO -- default-ubuntu-xenial64:       +requests==2.22.0
+I, [2020-01-16T16:37:22.067816 #8828]  INFO -- default-ubuntu-xenial64:       +six==1.12.0
+I, [2020-01-16T16:37:22.067878 #8828]  INFO -- default-ubuntu-xenial64:       +soupsieve==1.9.2
+I, [2020-01-16T16:37:22.068477 #8828]  INFO -- default-ubuntu-xenial64:       +urllib3==1.25.3
+I, [2020-01-16T16:37:22.068560 #8828]  INFO -- default-ubuntu-xenial64:       +wcwidth==0.1.7
+I, [2020-01-16T16:37:22.068743 #8828]  INFO -- default-ubuntu-xenial64:       +zipp==0.5.2
+I, [2020-01-16T16:37:22.068883 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.079773 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/setup.py] action create
+I, [2020-01-16T16:37:22.080270 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/setup.py
+I, [2020-01-16T16:37:22.080388 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/setup.py from none to 42f87e
+I, [2020-01-16T16:37:22.080613 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/setup.py	2020-01-16 16:37:21.082990000 +0000
+I, [2020-01-16T16:37:22.080722 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-setup20200116-17667-3mz8z0.py	2020-01-16 16:37:21.082990000 +0000
+I, [2020-01-16T16:37:22.080793 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,14 @@
+I, [2020-01-16T16:37:22.081463 #8828]  INFO -- default-ubuntu-xenial64:       +from setuptools import setup
+I, [2020-01-16T16:37:22.081592 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.081766 #8828]  INFO -- default-ubuntu-xenial64:       +setup(
+I, [2020-01-16T16:37:22.081890 #8828]  INFO -- default-ubuntu-xenial64:       +    name='itjobswatch_data',
+I, [2020-01-16T16:37:22.082019 #8828]  INFO -- default-ubuntu-xenial64:       +    version='0.1',
+I, [2020-01-16T16:37:22.082115 #8828]  INFO -- default-ubuntu-xenial64:       +    packages=[''],
+I, [2020-01-16T16:37:22.082264 #8828]  INFO -- default-ubuntu-xenial64:       +    url='',
+I, [2020-01-16T16:37:22.082345 #8828]  INFO -- default-ubuntu-xenial64:       +    license='',
+I, [2020-01-16T16:37:22.082877 #8828]  INFO -- default-ubuntu-xenial64:       +    author='kierancornwall',
+I, [2020-01-16T16:37:22.083751 #8828]  INFO -- default-ubuntu-xenial64:       +    author_email='kcornwall@spartaglobal.com',
+I, [2020-01-16T16:37:22.083858 #8828]  INFO -- default-ubuntu-xenial64:       +    description='',
+I, [2020-01-16T16:37:22.083948 #8828]  INFO -- default-ubuntu-xenial64:       +    install_requires=['pytest', 'requests', 'beautifulsoup4']
+I, [2020-01-16T16:37:22.085924 #8828]  INFO -- default-ubuntu-xenial64:       +)
+I, [2020-01-16T16:37:22.086585 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.097969 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/README.md] action create
+I, [2020-01-16T16:37:22.098256 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/README.md
+I, [2020-01-16T16:37:22.098357 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/README.md from none to 72a249
+I, [2020-01-16T16:37:22.099009 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/README.md	2020-01-16 16:37:21.098998000 +0000
+I, [2020-01-16T16:37:22.099194 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-README20200116-17667-53z6x2.md	2020-01-16 16:37:21.098998000 +0000
+I, [2020-01-16T16:37:22.099328 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,45 @@
+I, [2020-01-16T16:37:22.099741 #8828]  INFO -- default-ubuntu-xenial64:       +# IT Jobs Watch Data
+I, [2020-01-16T16:37:22.099915 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.099997 #8828]  INFO -- default-ubuntu-xenial64:       +## Introduction
+I, [2020-01-16T16:37:22.100134 #8828]  INFO -- default-ubuntu-xenial64:       +The aim of this project is to create a simple service that can scrape useful data from ITJobswatch.
+I, [2020-01-16T16:37:22.100214 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.100354 #8828]  INFO -- default-ubuntu-xenial64:       +## Current Scope
+I, [2020-01-16T16:37:22.100428 #8828]  INFO -- default-ubuntu-xenial64:       +At present the app is set up to be cloned and used to simply scrape the below services:
+I, [2020-01-16T16:37:22.100556 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.103155 #8828]  INFO -- default-ubuntu-xenial64:       +1. Home page top 30 job/roles / skills which can be found [here]()
+I, [2020-01-16T16:37:22.103346 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.103479 #8828]  INFO -- default-ubuntu-xenial64:       +The aim will be to expand this to further services such as:
+I, [2020-01-16T16:37:22.103550 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.103670 #8828]  INFO -- default-ubuntu-xenial64:       +* Regular polling of pages and writing to a database for longer terms stats
+I, [2020-01-16T16:37:22.104538 #8828]  INFO -- default-ubuntu-xenial64:       +* Bespoke calls for specific job role data
+I, [2020-01-16T16:37:22.104754 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.104923 #8828]  INFO -- default-ubuntu-xenial64:       +And much more.
+I, [2020-01-16T16:37:22.105005 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.105127 #8828]  INFO -- default-ubuntu-xenial64:       +## Usage
+I, [2020-01-16T16:37:22.105195 #8828]  INFO -- default-ubuntu-xenial64:       +_Pre-Requisites_
+I, [2020-01-16T16:37:22.105316 #8828]  INFO -- default-ubuntu-xenial64:       +* Pycharm IDE
+I, [2020-01-16T16:37:22.105397 #8828]  INFO -- default-ubuntu-xenial64:       +* Python 3.x + installed
+I, [2020-01-16T16:37:22.105570 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.105641 #8828]  INFO -- default-ubuntu-xenial64:       +### Installing packages
+I, [2020-01-16T16:37:22.105774 #8828]  INFO -- default-ubuntu-xenial64:       +The necessary packages needed to run this program should automatically be picked up by pycharm. You may find a a few pop ups within the IDE that state there are dependencies missing, if you simply install these through the IDE you should be set up correctly.  
+I, [2020-01-16T16:37:22.105881 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.106011 #8828]  INFO -- default-ubuntu-xenial64:       +### Running tests
+I, [2020-01-16T16:37:22.107046 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.107607 #8828]  INFO -- default-ubuntu-xenial64:       +To test whether the program will work from your machine:
+I, [2020-01-16T16:37:22.107750 #8828]  INFO -- default-ubuntu-xenial64:       + 
+I, [2020-01-16T16:37:22.107815 #8828]  INFO -- default-ubuntu-xenial64:       + * Ensure the `config.ini` file has the test environment set to `live`
+I, [2020-01-16T16:37:22.107869 #8828]  INFO -- default-ubuntu-xenial64:       + * Click the `Terminal` icon which can be found on the menu in the bottom left of Pycharm.
+I, [2020-01-16T16:37:22.107916 #8828]  INFO -- default-ubuntu-xenial64:       +* Ensure you're in the root path of the project and type `python -m pytest tests/`
+I, [2020-01-16T16:37:22.107972 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.108038 #8828]  INFO -- default-ubuntu-xenial64:       +This should execute the tests if any fail you may have issues with this program.
+I, [2020-01-16T16:37:22.108419 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.108494 #8828]  INFO -- default-ubuntu-xenial64:       +### Running and using the program
+I, [2020-01-16T16:37:22.108551 #8828]  INFO -- default-ubuntu-xenial64:       +To use the program simply right click on the `main.py` file and then click `Run 'main'`. This will run the command line user interface.
+I, [2020-01-16T16:37:22.108601 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.108666 #8828]  INFO -- default-ubuntu-xenial64:       +Follow the instructions to download via the various options given.
+I, [2020-01-16T16:37:22.108729 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.108778 #8828]  INFO -- default-ubuntu-xenial64:       +# Next steps
+I, [2020-01-16T16:37:22.108825 #8828]  INFO -- default-ubuntu-xenial64:       +* Adding a job details search option (essentially be able to search for a specific role and return the details in a CSV)
+I, [2020-01-16T16:37:22.108892 #8828]  INFO -- default-ubuntu-xenial64:       +* create a connected database for full deployment
+I, [2020-01-16T16:37:22.109437 #8828]  INFO -- default-ubuntu-xenial64:       +* Build a scheduler as part of a full deployment to poll and add to the database 
+I, [2020-01-16T16:37:22.109959 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.121319 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/main.py] action create
+I, [2020-01-16T16:37:22.121645 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/main.py
+I, [2020-01-16T16:37:22.121765 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/main.py from none to da67ec
+I, [2020-01-16T16:37:22.121820 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/main.py	2020-01-16 16:37:21.111004000 +0000
+I, [2020-01-16T16:37:22.121865 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-main20200116-17667-1p2xa3d.py	2020-01-16 16:37:21.111004000 +0000
+I, [2020-01-16T16:37:22.121906 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,5 @@
+I, [2020-01-16T16:37:22.121948 #8828]  INFO -- default-ubuntu-xenial64:       +from src.cmd_user_interface import CmdUserInterface
+I, [2020-01-16T16:37:22.122000 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.122058 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.122476 #8828]  INFO -- default-ubuntu-xenial64:       +    CmdUserInterface()
+I, [2020-01-16T16:37:22.122677 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.122842 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.gitignore] action create
+I, [2020-01-16T16:37:22.122974 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.gitignore
+I, [2020-01-16T16:37:22.123030 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.gitignore from none to f6e327
+I, [2020-01-16T16:37:22.123080 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.gitignore	2020-01-16 16:37:21.119008000 +0000
+I, [2020-01-16T16:37:22.123127 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-.gitignore20200116-17667-aidilw.gitignore	2020-01-16 16:37:21.119008000 +0000
+I, [2020-01-16T16:37:22.123191 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,6 @@
+I, [2020-01-16T16:37:22.123244 #8828]  INFO -- default-ubuntu-xenial64:       +/venv/
+I, [2020-01-16T16:37:22.123306 #8828]  INFO -- default-ubuntu-xenial64:       +/.pytest_cache/
+I, [2020-01-16T16:37:22.123348 #8828]  INFO -- default-ubuntu-xenial64:       +.idea
+I, [2020-01-16T16:37:22.123390 #8828]  INFO -- default-ubuntu-xenial64:       +.pytest_cache
+I, [2020-01-16T16:37:22.123686 #8828]  INFO -- default-ubuntu-xenial64:       +__pycache__/
+I, [2020-01-16T16:37:22.123889 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.135679 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config_manager.py] action create
+I, [2020-01-16T16:37:22.136199 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config_manager.py
+I, [2020-01-16T16:37:22.136336 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config_manager.py from none to 204e0f
+I, [2020-01-16T16:37:22.136395 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/config_manager.py	2020-01-16 16:37:21.127012000 +0000
+I, [2020-01-16T16:37:22.136446 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-config_manager20200116-17667-t3wgn6.py	2020-01-16 16:37:21.127012000 +0000
+I, [2020-01-16T16:37:22.136507 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,22 @@
+I, [2020-01-16T16:37:22.136572 #8828]  INFO -- default-ubuntu-xenial64:       +import configparser
+I, [2020-01-16T16:37:22.136637 #8828]  INFO -- default-ubuntu-xenial64:       +from definitions import ROOT_DIR
+I, [2020-01-16T16:37:22.136700 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.136743 #8828]  INFO -- default-ubuntu-xenial64:       +__config = configparser.ConfigParser()
+I, [2020-01-16T16:37:22.136786 #8828]  INFO -- default-ubuntu-xenial64:       +__config.read(ROOT_DIR + '/config.ini')
+I, [2020-01-16T16:37:22.136869 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.136947 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.136993 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.137109 #8828]  INFO -- default-ubuntu-xenial64:       +# Live pages
+I, [2020-01-16T16:37:22.137164 #8828]  INFO -- default-ubuntu-xenial64:       +def itjobswatch_home_page_url():
+I, [2020-01-16T16:37:22.137231 #8828]  INFO -- default-ubuntu-xenial64:       +    return __config['itjobswatchurls']['itjobswatch_home_page_url']
+I, [2020-01-16T16:37:22.137308 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.137360 #8828]  INFO -- default-ubuntu-xenial64:       +# Test Env setting
+I, [2020-01-16T16:37:22.137440 #8828]  INFO -- default-ubuntu-xenial64:       +def get_test_env_setting():
+I, [2020-01-16T16:37:22.137528 #8828]  INFO -- default-ubuntu-xenial64:       +    return __config['environment']['test_env']
+I, [2020-01-16T16:37:22.137586 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.137878 #8828]  INFO -- default-ubuntu-xenial64:       +# Test stub file locations
+I, [2020-01-16T16:37:22.138945 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.139104 #8828]  INFO -- default-ubuntu-xenial64:       +def itjobswatch_home_page_test_file():
+I, [2020-01-16T16:37:22.139161 #8828]  INFO -- default-ubuntu-xenial64:       +    return ROOT_DIR + __config['itjobswatch_test_data']['itjobswatch_home_page_test_file']
+I, [2020-01-16T16:37:22.139464 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.140058 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.140712 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/definitions.py] action create
+I, [2020-01-16T16:37:22.141031 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/definitions.py
+I, [2020-01-16T16:37:22.141499 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/definitions.py from none to d5ea53
+I, [2020-01-16T16:37:22.141820 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/definitions.py	2020-01-16 16:37:21.143020000 +0000
+I, [2020-01-16T16:37:22.142157 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/.chef-definitions20200116-17667-1gnc9dr.py	2020-01-16 16:37:21.143020000 +0000
+I, [2020-01-16T16:37:22.142234 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,9 @@
+I, [2020-01-16T16:37:22.142335 #8828]  INFO -- default-ubuntu-xenial64:       +import os
+I, [2020-01-16T16:37:22.142418 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.142476 #8828]  INFO -- default-ubuntu-xenial64:       +ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+I, [2020-01-16T16:37:22.142550 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.142672 #8828]  INFO -- default-ubuntu-xenial64:       +TEST_RESOURCES_FOLDER = ROOT_DIR + '/tests/test_resources'
+I, [2020-01-16T16:37:22.142739 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.142921 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.143648 #8828]  INFO -- default-ubuntu-xenial64:       +    print(ROOT_DIR)
+I, [2020-01-16T16:37:22.144175 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.144904 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src] action create
+I, [2020-01-16T16:37:22.155558 #8828]  INFO -- default-ubuntu-xenial64:       - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src
+I, [2020-01-16T16:37:22.155842 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0755'
+I, [2020-01-16T16:37:22.155929 #8828]  INFO -- default-ubuntu-xenial64:       - change owner from '' to 'root'
+I, [2020-01-16T16:37:22.156146 #8828]  INFO -- default-ubuntu-xenial64:       - change group from '' to 'root'
+I, [2020-01-16T16:37:22.167530 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/cmd_user_interface.py] action create
+I, [2020-01-16T16:37:22.168294 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/cmd_user_interface.py
+I, [2020-01-16T16:37:22.168544 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/cmd_user_interface.py from none to fafb34
+I, [2020-01-16T16:37:22.168676 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/cmd_user_interface.py	2020-01-16 16:37:21.163030000 +0000
+I, [2020-01-16T16:37:22.168758 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/.chef-cmd_user_interface20200116-17667-1fwwn7i.py	2020-01-16 16:37:21.163030000 +0000
+I, [2020-01-16T16:37:22.168818 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,71 @@
+I, [2020-01-16T16:37:22.168870 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_url
+I, [2020-01-16T16:37:22.169336 #8828]  INFO -- default-ubuntu-xenial64:       +from src.itjobswatch_html_readers.itjobswatch_home_page_top_30 import ItJobsWatchHomePageTop30
+I, [2020-01-16T16:37:22.169552 #8828]  INFO -- default-ubuntu-xenial64:       +from src.csv_generators.top_30_csv_generator import Top30CSVGenerator
+I, [2020-01-16T16:37:22.169880 #8828]  INFO -- default-ubuntu-xenial64:       +import os
+I, [2020-01-16T16:37:22.170481 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.170587 #8828]  INFO -- default-ubuntu-xenial64:       +class CmdUserInterface:
+I, [2020-01-16T16:37:22.170668 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.170767 #8828]  INFO -- default-ubuntu-xenial64:       +    def __init__(self):
+I, [2020-01-16T16:37:22.170892 #8828]  INFO -- default-ubuntu-xenial64:       +        self.menu_options = ['Get ITJobsWatch top 30 - Skills/Roles (csv)']
+I, [2020-01-16T16:37:22.170984 #8828]  INFO -- default-ubuntu-xenial64:       +        self.menu_item_selected = None
+I, [2020-01-16T16:37:22.171067 #8828]  INFO -- default-ubuntu-xenial64:       +        self.menu_control()
+I, [2020-01-16T16:37:22.171131 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.171215 #8828]  INFO -- default-ubuntu-xenial64:       +    def _generate_menu(self):
+I, [2020-01-16T16:37:22.171668 #8828]  INFO -- default-ubuntu-xenial64:       +        service_menu = "\nPlease select a number from the below menu: \n"
+I, [2020-01-16T16:37:22.171759 #8828]  INFO -- default-ubuntu-xenial64:       +        menu_counter = 1
+I, [2020-01-16T16:37:22.171849 #8828]  INFO -- default-ubuntu-xenial64:       +        for item in self.menu_options:
+I, [2020-01-16T16:37:22.171974 #8828]  INFO -- default-ubuntu-xenial64:       +            service_menu += str(menu_counter) + '. ' + item + '\n'
+I, [2020-01-16T16:37:22.172058 #8828]  INFO -- default-ubuntu-xenial64:       +            menu_counter += 1
+I, [2020-01-16T16:37:22.172146 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.172245 #8828]  INFO -- default-ubuntu-xenial64:       +        self.number_of_menu_items = menu_counter
+I, [2020-01-16T16:37:22.172324 #8828]  INFO -- default-ubuntu-xenial64:       +        service_menu += '\nPlease select an option or type "exit": \n'
+I, [2020-01-16T16:37:22.172424 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.172501 #8828]  INFO -- default-ubuntu-xenial64:       +        return service_menu
+I, [2020-01-16T16:37:22.173085 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.173218 #8828]  INFO -- default-ubuntu-xenial64:       +    def menu_control(self):
+I, [2020-01-16T16:37:22.173291 #8828]  INFO -- default-ubuntu-xenial64:       +        print(self._generate_menu())
+I, [2020-01-16T16:37:22.173380 #8828]  INFO -- default-ubuntu-xenial64:       +        option_selected = input()
+I, [2020-01-16T16:37:22.173459 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.173556 #8828]  INFO -- default-ubuntu-xenial64:       +        if option_selected.lower() == 'exit':
+I, [2020-01-16T16:37:22.173631 #8828]  INFO -- default-ubuntu-xenial64:       +            exit()
+I, [2020-01-16T16:37:22.173726 #8828]  INFO -- default-ubuntu-xenial64:       +        elif option_selected == '':
+I, [2020-01-16T16:37:22.173830 #8828]  INFO -- default-ubuntu-xenial64:       +            self.menu_control()
+I, [2020-01-16T16:37:22.173938 #8828]  INFO -- default-ubuntu-xenial64:       +        elif int(option_selected) == 0 or int(option_selected) > len(self.menu_options):
+I, [2020-01-16T16:37:22.174096 #8828]  INFO -- default-ubuntu-xenial64:       +            print('Please select an option from the menu or type exit')
+I, [2020-01-16T16:37:22.174223 #8828]  INFO -- default-ubuntu-xenial64:       +            self.menu_control()
+I, [2020-01-16T16:37:22.174342 #8828]  INFO -- default-ubuntu-xenial64:       +        elif int(option_selected) == 1:
+I, [2020-01-16T16:37:22.174472 #8828]  INFO -- default-ubuntu-xenial64:       +            self.manage_get_ITJW_top_30_menu()
+I, [2020-01-16T16:37:22.174583 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.174716 #8828]  INFO -- default-ubuntu-xenial64:       +    def manage_get_ITJW_top_30_menu(self):
+I, [2020-01-16T16:37:22.174846 #8828]  INFO -- default-ubuntu-xenial64:       +        print('Please select from the below menu options\n')
+I, [2020-01-16T16:37:22.174912 #8828]  INFO -- default-ubuntu-xenial64:       +        print('1. Print top 30 to downloads folder with default name (No Headers)')
+I, [2020-01-16T16:37:22.175021 #8828]  INFO -- default-ubuntu-xenial64:       +        print('2. Print top 30 to downloads folder with default name (with Headers)')
+I, [2020-01-16T16:37:22.175124 #8828]  INFO -- default-ubuntu-xenial64:       +        print('3. Return to Main Menu')
+I, [2020-01-16T16:37:22.175189 #8828]  INFO -- default-ubuntu-xenial64:       +        print('or type exit to quit program\n')
+I, [2020-01-16T16:37:22.175302 #8828]  INFO -- default-ubuntu-xenial64:       +        print('Please select option:\n')
+I, [2020-01-16T16:37:22.176532 #8828]  INFO -- default-ubuntu-xenial64:       +        option_selected = input()
+I, [2020-01-16T16:37:22.176774 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.176977 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.177158 #8828]  INFO -- default-ubuntu-xenial64:       +        if option_selected.lower() == 'exit':
+I, [2020-01-16T16:37:22.177399 #8828]  INFO -- default-ubuntu-xenial64:       +            exit()
+I, [2020-01-16T16:37:22.178112 #8828]  INFO -- default-ubuntu-xenial64:       +        elif option_selected == '':
+I, [2020-01-16T16:37:22.178313 #8828]  INFO -- default-ubuntu-xenial64:       +            self.manage_get_ITJW_top_30_menu()
+I, [2020-01-16T16:37:22.178467 #8828]  INFO -- default-ubuntu-xenial64:       +        elif int(option_selected) == 1:
+I, [2020-01-16T16:37:22.178628 #8828]  INFO -- default-ubuntu-xenial64:       +            Top30CSVGenerator().generate_top_30_csv(ItJobsWatchHomePageTop30(itjobswatch_home_page_url()).get_top_30_table_elements_into_array())
+I, [2020-01-16T16:37:22.178870 #8828]  INFO -- default-ubuntu-xenial64:       +            print('Please check your downloads folder')
+I, [2020-01-16T16:37:22.179242 #8828]  INFO -- default-ubuntu-xenial64:       +            self.manage_get_ITJW_top_30_menu()
+I, [2020-01-16T16:37:22.180571 #8828]  INFO -- default-ubuntu-xenial64:       +        elif int(option_selected) == 2:
+I, [2020-01-16T16:37:22.181112 #8828]  INFO -- default-ubuntu-xenial64:       +            top_30 = ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
+I, [2020-01-16T16:37:22.181841 #8828]  INFO -- default-ubuntu-xenial64:       +            Top30CSVGenerator().generate_top_30_csv(top_30.get_top_30_table_elements_into_array(), os.path.expanduser('~/Downloads/'), 'ItJobsWatchTop30.csv', top_30.get_table_headers_array())
+I, [2020-01-16T16:37:22.181990 #8828]  INFO -- default-ubuntu-xenial64:       +        elif int(option_selected) == 3:
+I, [2020-01-16T16:37:22.182372 #8828]  INFO -- default-ubuntu-xenial64:       +            self.menu_control()
+I, [2020-01-16T16:37:22.182560 #8828]  INFO -- default-ubuntu-xenial64:       +        else:
+I, [2020-01-16T16:37:22.182671 #8828]  INFO -- default-ubuntu-xenial64:       +            print('Please select an option from the menu or type exit')
+I, [2020-01-16T16:37:22.182777 #8828]  INFO -- default-ubuntu-xenial64:       +            self.manage_get_ITJW_top_30_menu()
+I, [2020-01-16T16:37:22.182891 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.183804 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.184034 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.184942 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.185597 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.186400 #8828]  INFO -- default-ubuntu-xenial64:       +    CmdUserInterface().menu_control()
+I, [2020-01-16T16:37:22.186657 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.187189 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/html_object_manager.py] action create
+I, [2020-01-16T16:37:22.187492 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/html_object_manager.py
+I, [2020-01-16T16:37:22.187885 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/html_object_manager.py from none to 33e366
+I, [2020-01-16T16:37:22.188031 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/html_object_manager.py	2020-01-16 16:37:21.179038000 +0000
+I, [2020-01-16T16:37:22.188344 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/.chef-html_object_manager20200116-17667-muklsj.py	2020-01-16 16:37:21.179038000 +0000
+I, [2020-01-16T16:37:22.188683 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,29 @@
+I, [2020-01-16T16:37:22.188753 #8828]  INFO -- default-ubuntu-xenial64:       +import requests
+I, [2020-01-16T16:37:22.188801 #8828]  INFO -- default-ubuntu-xenial64:       +import os.path
+I, [2020-01-16T16:37:22.188851 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_test_file, itjobswatch_home_page_url
+I, [2020-01-16T16:37:22.188973 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.189211 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.189330 #8828]  INFO -- default-ubuntu-xenial64:       +class HtmlObjectManager():
+I, [2020-01-16T16:37:22.189418 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.189505 #8828]  INFO -- default-ubuntu-xenial64:       +    def __init__(self, file_or_url_location):
+I, [2020-01-16T16:37:22.189592 #8828]  INFO -- default-ubuntu-xenial64:       +        self.url_response = None
+I, [2020-01-16T16:37:22.189680 #8828]  INFO -- default-ubuntu-xenial64:       +        self.html = None
+I, [2020-01-16T16:37:22.189864 #8828]  INFO -- default-ubuntu-xenial64:       +        self._get_html_file_or_url(file_or_url_location)
+I, [2020-01-16T16:37:22.190061 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.190154 #8828]  INFO -- default-ubuntu-xenial64:       +    def _get_html_file_or_url(self, file_location_or_url_location):
+I, [2020-01-16T16:37:22.190249 #8828]  INFO -- default-ubuntu-xenial64:       +        if os.path.exists(file_location_or_url_location):
+I, [2020-01-16T16:37:22.191009 #8828]  INFO -- default-ubuntu-xenial64:       +            self.html = open(file_location_or_url_location).read()
+I, [2020-01-16T16:37:22.191113 #8828]  INFO -- default-ubuntu-xenial64:       +        elif 'http' in file_location_or_url_location:
+I, [2020-01-16T16:37:22.191182 #8828]  INFO -- default-ubuntu-xenial64:       +            response = requests.get(file_location_or_url_location)
+I, [2020-01-16T16:37:22.191262 #8828]  INFO -- default-ubuntu-xenial64:       +            self.url_response = response
+I, [2020-01-16T16:37:22.191361 #8828]  INFO -- default-ubuntu-xenial64:       +            self.html = response.content.decode("utf-8")
+I, [2020-01-16T16:37:22.191454 #8828]  INFO -- default-ubuntu-xenial64:       +        else:
+I, [2020-01-16T16:37:22.191520 #8828]  INFO -- default-ubuntu-xenial64:       +            raise NameError("Please ensure your file or url have the correct path")
+I, [2020-01-16T16:37:22.191585 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.191647 #8828]  INFO -- default-ubuntu-xenial64:       +    def get_response_code(self):
+I, [2020-01-16T16:37:22.191724 #8828]  INFO -- default-ubuntu-xenial64:       +        return self.url_response.status_code
+I, [2020-01-16T16:37:22.191813 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.191891 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.191975 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.192683 #8828]  INFO -- default-ubuntu-xenial64:       +    print(HtmlObjectManager(itjobswatch_home_page_url()).html)
+I, [2020-01-16T16:37:22.192991 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.193436 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests] action create
+I, [2020-01-16T16:37:22.193796 #8828]  INFO -- default-ubuntu-xenial64:       - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests
+I, [2020-01-16T16:37:22.193943 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0755'
+I, [2020-01-16T16:37:22.194017 #8828]  INFO -- default-ubuntu-xenial64:       - change owner from '' to 'root'
+I, [2020-01-16T16:37:22.194327 #8828]  INFO -- default-ubuntu-xenial64:       - change group from '' to 'root'
+I, [2020-01-16T16:37:22.205437 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_csv_generator.py] action create
+I, [2020-01-16T16:37:22.205806 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_csv_generator.py
+I, [2020-01-16T16:37:22.205961 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_csv_generator.py from none to 910970
+I, [2020-01-16T16:37:22.206280 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_csv_generator.py	2020-01-16 16:37:21.203050000 +0000
+I, [2020-01-16T16:37:22.206523 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/.chef-test_csv_generator20200116-17667-19o5xby.py	2020-01-16 16:37:21.203050000 +0000
+I, [2020-01-16T16:37:22.207209 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,71 @@
+I, [2020-01-16T16:37:22.208198 #8828]  INFO -- default-ubuntu-xenial64:       +from src.csv_generators.top_30_csv_generator import Top30CSVGenerator
+I, [2020-01-16T16:37:22.208415 #8828]  INFO -- default-ubuntu-xenial64:       +from src.itjobswatch_html_readers.itjobswatch_home_page_top_30 import ItJobsWatchHomePageTop30
+I, [2020-01-16T16:37:22.208521 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_url, itjobswatch_home_page_test_file, get_test_env_setting
+I, [2020-01-16T16:37:22.208642 #8828]  INFO -- default-ubuntu-xenial64:       +from definitions import TEST_RESOURCES_FOLDER
+I, [2020-01-16T16:37:22.209244 #8828]  INFO -- default-ubuntu-xenial64:       +import pytest
+I, [2020-01-16T16:37:22.209452 #8828]  INFO -- default-ubuntu-xenial64:       +import csv
+I, [2020-01-16T16:37:22.209588 #8828]  INFO -- default-ubuntu-xenial64:       +import os
+I, [2020-01-16T16:37:22.209721 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.209851 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.209969 #8828]  INFO -- default-ubuntu-xenial64:       +class TestCSVGenerator:
+I, [2020-01-16T16:37:22.210101 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.210220 #8828]  INFO -- default-ubuntu-xenial64:       +    # The below fixture sets up whether you are testing locally on stubs or against live HTTP calls
+I, [2020-01-16T16:37:22.210348 #8828]  INFO -- default-ubuntu-xenial64:       +    # This is defined in the config.ini file in the root of this project
+I, [2020-01-16T16:37:22.210466 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.fixture(scope='module')
+I, [2020-01-16T16:37:22.210609 #8828]  INFO -- default-ubuntu-xenial64:       +    def generate_top_30_html_object(self):
+I, [2020-01-16T16:37:22.210734 #8828]  INFO -- default-ubuntu-xenial64:       +        if get_test_env_setting() == 'live':
+I, [2020-01-16T16:37:22.210863 #8828]  INFO -- default-ubuntu-xenial64:       +            return ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
+I, [2020-01-16T16:37:22.211020 #8828]  INFO -- default-ubuntu-xenial64:       +        else:
+I, [2020-01-16T16:37:22.211147 #8828]  INFO -- default-ubuntu-xenial64:       +            return ItJobsWatchHomePageTop30(itjobswatch_home_page_test_file())
+I, [2020-01-16T16:37:22.212052 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.212738 #8828]  INFO -- default-ubuntu-xenial64:       +    # the below fixtures relate to the setup and teardown for testing csv generation based on giving the
+I, [2020-01-16T16:37:22.213246 #8828]  INFO -- default-ubuntu-xenial64:       +    # top 30 CSV Generator a defined path
+I, [2020-01-16T16:37:22.213463 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.fixture(scope='module', autouse=True)
+I, [2020-01-16T16:37:22.213575 #8828]  INFO -- default-ubuntu-xenial64:       +    def create_top_30_test_csv(self, generate_top_30_html_object):
+I, [2020-01-16T16:37:22.213663 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object = Top30CSVGenerator()
+I, [2020-01-16T16:37:22.213790 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object.generate_top_30_csv(generate_top_30_html_object.get_top_30_table_elements_into_array(), TEST_RESOURCES_FOLDER, '/top_30_without_headers.csv')
+I, [2020-01-16T16:37:22.213876 #8828]  INFO -- default-ubuntu-xenial64:       +        yield self.create_top_30_test_csv
+I, [2020-01-16T16:37:22.213949 #8828]  INFO -- default-ubuntu-xenial64:       +        os.remove(TEST_RESOURCES_FOLDER + '/top_30_without_headers.csv')
+I, [2020-01-16T16:37:22.214027 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.214084 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.fixture(scope='module', autouse=True)
+I, [2020-01-16T16:37:22.214168 #8828]  INFO -- default-ubuntu-xenial64:       +    def create_top_30_test_csv_with_headers_with_specified_location(self, generate_top_30_html_object):
+I, [2020-01-16T16:37:22.214234 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object = Top30CSVGenerator()
+I, [2020-01-16T16:37:22.214316 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object.generate_top_30_csv(generate_top_30_html_object.get_top_30_table_elements_into_array(), TEST_RESOURCES_FOLDER, '/top_30_with_headers.csv', 'yes')
+I, [2020-01-16T16:37:22.214366 #8828]  INFO -- default-ubuntu-xenial64:       +        yield self.create_top_30_test_csv_with_headers_with_specified_location
+I, [2020-01-16T16:37:22.214410 #8828]  INFO -- default-ubuntu-xenial64:       +        os.remove(TEST_RESOURCES_FOLDER + '/top_30_with_headers.csv')
+I, [2020-01-16T16:37:22.214452 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.214504 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.fixture(scope='module', autouse=True)
+I, [2020-01-16T16:37:22.214603 #8828]  INFO -- default-ubuntu-xenial64:       +    def create_top_30_using_default_location_and_default_name(self, generate_top_30_html_object):
+I, [2020-01-16T16:37:22.214663 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object = Top30CSVGenerator()
+I, [2020-01-16T16:37:22.215586 #8828]  INFO -- default-ubuntu-xenial64:       +        csv_generator_object.generate_top_30_csv(generate_top_30_html_object.get_top_30_table_elements_into_array())
+I, [2020-01-16T16:37:22.215673 #8828]  INFO -- default-ubuntu-xenial64:       +        yield self.create_top_30_using_default_location_and_default_name
+I, [2020-01-16T16:37:22.215760 #8828]  INFO -- default-ubuntu-xenial64:       +        os.remove(os.path.expanduser('~/Downloads/') + 'ItJobsWatchTop30.csv')
+I, [2020-01-16T16:37:22.215813 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.215880 #8828]  INFO -- default-ubuntu-xenial64:       +    # testing csv generation based on giving the top 30 CSV Generator a defined path
+I, [2020-01-16T16:37:22.215961 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_csv_without_headers(self):
+I, [2020-01-16T16:37:22.216017 #8828]  INFO -- default-ubuntu-xenial64:       +        list_count = 0
+I, [2020-01-16T16:37:22.216093 #8828]  INFO -- default-ubuntu-xenial64:       +        with open(TEST_RESOURCES_FOLDER + '/top_30_without_headers.csv') as top_30_without_headers:
+I, [2020-01-16T16:37:22.216160 #8828]  INFO -- default-ubuntu-xenial64:       +            parsed_csv_file = csv.reader(top_30_without_headers)
+I, [2020-01-16T16:37:22.216225 #8828]  INFO -- default-ubuntu-xenial64:       +            for line in parsed_csv_file:
+I, [2020-01-16T16:37:22.216793 #8828]  INFO -- default-ubuntu-xenial64:       +                list_count += 1
+I, [2020-01-16T16:37:22.216962 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.217313 #8828]  INFO -- default-ubuntu-xenial64:       +        assert list_count == 30
+I, [2020-01-16T16:37:22.217772 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.218413 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_csv_with_headers(self):
+I, [2020-01-16T16:37:22.219093 #8828]  INFO -- default-ubuntu-xenial64:       +        list_count = 0
+I, [2020-01-16T16:37:22.219285 #8828]  INFO -- default-ubuntu-xenial64:       +        with open(TEST_RESOURCES_FOLDER + '/top_30_with_headers.csv') as top_30_without_headers:
+I, [2020-01-16T16:37:22.219656 #8828]  INFO -- default-ubuntu-xenial64:       +            parsed_csv_file = csv.reader(top_30_without_headers)
+I, [2020-01-16T16:37:22.219788 #8828]  INFO -- default-ubuntu-xenial64:       +            for line in parsed_csv_file:
+I, [2020-01-16T16:37:22.219905 #8828]  INFO -- default-ubuntu-xenial64:       +                list_count += 1
+I, [2020-01-16T16:37:22.219996 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.220089 #8828]  INFO -- default-ubuntu-xenial64:       +        assert list_count == 31
+I, [2020-01-16T16:37:22.220172 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.220258 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_csv_without_headers_default_location(self):
+I, [2020-01-16T16:37:22.220349 #8828]  INFO -- default-ubuntu-xenial64:       +        list_count = 0
+I, [2020-01-16T16:37:22.222410 #8828]  INFO -- default-ubuntu-xenial64:       +        with open(os.path.expanduser('~/Downloads/') + 'ItJobsWatchTop30.csv') as top_30_without_headers:
+I, [2020-01-16T16:37:22.222879 #8828]  INFO -- default-ubuntu-xenial64:       +            parsed_csv_file = csv.reader(top_30_without_headers)
+I, [2020-01-16T16:37:22.223484 #8828]  INFO -- default-ubuntu-xenial64:       +            for line in parsed_csv_file:
+I, [2020-01-16T16:37:22.223792 #8828]  INFO -- default-ubuntu-xenial64:       +                list_count += 1
+I, [2020-01-16T16:37:22.223986 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.225161 #8828]  INFO -- default-ubuntu-xenial64:       +        assert list_count == 30
+I, [2020-01-16T16:37:22.225808 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.226418 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_html_object_manager.py] action create
+I, [2020-01-16T16:37:22.226890 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_html_object_manager.py
+I, [2020-01-16T16:37:22.227113 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_html_object_manager.py from none to 0b652e
+I, [2020-01-16T16:37:22.227281 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_html_object_manager.py	2020-01-16 16:37:21.223060000 +0000
+I, [2020-01-16T16:37:22.227362 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/.chef-test_html_object_manager20200116-17667-1xyte1d.py	2020-01-16 16:37:21.223060000 +0000
+I, [2020-01-16T16:37:22.227456 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,30 @@
+I, [2020-01-16T16:37:22.227525 #8828]  INFO -- default-ubuntu-xenial64:       +import pytest
+I, [2020-01-16T16:37:22.227585 #8828]  INFO -- default-ubuntu-xenial64:       +import os
+I, [2020-01-16T16:37:22.227631 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_test_file, itjobswatch_home_page_url, get_test_env_setting
+I, [2020-01-16T16:37:22.228201 #8828]  INFO -- default-ubuntu-xenial64:       +from src.html_object_manager import HtmlObjectManager
+I, [2020-01-16T16:37:22.228281 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.228364 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.228447 #8828]  INFO -- default-ubuntu-xenial64:       +class TestHtmlObjectManager:
+I, [2020-01-16T16:37:22.228546 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.228703 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.fixture()
+I, [2020-01-16T16:37:22.228846 #8828]  INFO -- default-ubuntu-xenial64:       +    def html_manager_object(self):
+I, [2020-01-16T16:37:22.228959 #8828]  INFO -- default-ubuntu-xenial64:       +        if get_test_env_setting() == 'live':
+I, [2020-01-16T16:37:22.229050 #8828]  INFO -- default-ubuntu-xenial64:       +            return HtmlObjectManager(itjobswatch_home_page_url())
+I, [2020-01-16T16:37:22.229109 #8828]  INFO -- default-ubuntu-xenial64:       +        else:
+I, [2020-01-16T16:37:22.229176 #8828]  INFO -- default-ubuntu-xenial64:       +            return HtmlObjectManager(itjobswatch_home_page_test_file())
+I, [2020-01-16T16:37:22.229257 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.229929 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_html_manager_file_is_opened_correctly(self, html_manager_object):
+I, [2020-01-16T16:37:22.230017 #8828]  INFO -- default-ubuntu-xenial64:       +        assert type(html_manager_object.html) is str
+I, [2020-01-16T16:37:22.230100 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.230224 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_incorrect_file_or_url_path_raises_name_error(self):
+I, [2020-01-16T16:37:22.230364 #8828]  INFO -- default-ubuntu-xenial64:       +        with pytest.raises(NameError):
+I, [2020-01-16T16:37:22.230516 #8828]  INFO -- default-ubuntu-xenial64:       +            assert HtmlObjectManager("test")
+I, [2020-01-16T16:37:22.230619 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.230691 #8828]  INFO -- default-ubuntu-xenial64:       +    @pytest.mark.skipif(get_test_env_setting() == 'test', reason='This test is specific to a http call and is not valid when testing locally')
+I, [2020-01-16T16:37:22.230762 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_html_manager_status_response_is_200(self, html_manager_object):
+I, [2020-01-16T16:37:22.230814 #8828]  INFO -- default-ubuntu-xenial64:       +        assert html_manager_object.url_response.status_code == 200
+I, [2020-01-16T16:37:22.230899 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.231547 #8828]  INFO -- default-ubuntu-xenial64:       +    def test_html_manager_returns_html_from_url(self, html_manager_object):
+I, [2020-01-16T16:37:22.231631 #8828]  INFO -- default-ubuntu-xenial64:       +        assert 'Tracking the IT job market' in html_manager_object.html
+I, [2020-01-16T16:37:22.231861 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.232061 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.254731 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_top_30_html_reader.py] action create
+I, [2020-01-16T16:37:22.255262 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_top_30_html_reader.py
+I, [2020-01-16T16:37:22.255713 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_top_30_html_reader.py from none to d5dc8f
+I, [2020-01-16T16:37:22.256206 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_top_30_html_reader.py	2020-01-16 16:37:21.255076000 +0000
+I, [2020-01-16T16:37:22.256441 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/.chef-test_top_30_html_reader20200116-17667-17cthy8.py	2020-01-16 16:37:21.255076000 +0000
+I, [2020-01-16T16:37:22.257540 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,23 @@
+I, [2020-01-16T16:37:22.257866 #8828]  INFO -- default-ubuntu-xenial64:       +import pytest
+I, [2020-01-16T16:37:22.258043 #8828]  INFO -- default-ubuntu-xenial64:       +from src.itjobswatch_html_readers.itjobswatch_home_page_top_30 import ItJobsWatchHomePageTop30
+I, [2020-01-16T16:37:22.258236 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_url, itjobswatch_home_page_test_file, get_test_env_setting
+I, [2020-01-16T16:37:22.258373 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.258563 #8828]  INFO -- default-ubuntu-xenial64:       +# Tests in this section are thin as we do not have access to the backend to validate
+I, [2020-01-16T16:37:22.258712 #8828]  INFO -- default-ubuntu-xenial64:       +# They do test that there is no change in expected table size and numbers
+I, [2020-01-16T16:37:22.258843 #8828]  INFO -- default-ubuntu-xenial64:       +class TestTop30HtmlReader():
+I, [2020-01-16T16:37:22.259402 #8828]  INFO -- default-ubuntu-xenial64:       +        @pytest.fixture()
+I, [2020-01-16T16:37:22.260163 #8828]  INFO -- default-ubuntu-xenial64:       +        def top_30_object(self):
+I, [2020-01-16T16:37:22.260467 #8828]  INFO -- default-ubuntu-xenial64:       +            if get_test_env_setting() == 'live':
+I, [2020-01-16T16:37:22.260671 #8828]  INFO -- default-ubuntu-xenial64:       +                return ItJobsWatchHomePageTop30(itjobswatch_home_page_url())
+I, [2020-01-16T16:37:22.260838 #8828]  INFO -- default-ubuntu-xenial64:       +            else:
+I, [2020-01-16T16:37:22.260924 #8828]  INFO -- default-ubuntu-xenial64:       +                return ItJobsWatchHomePageTop30(itjobswatch_home_page_test_file())
+I, [2020-01-16T16:37:22.260996 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.261069 #8828]  INFO -- default-ubuntu-xenial64:       +        def test_table_with_class_of_results_exists(self, top_30_object):
+I, [2020-01-16T16:37:22.261164 #8828]  INFO -- default-ubuntu-xenial64:       +            assert top_30_object.home_page_html.find('table', {'class': 'results'}).attrs == {'class': ['results']}
+I, [2020-01-16T16:37:22.261238 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.261316 #8828]  INFO -- default-ubuntu-xenial64:       +        def test_table_headers_are_returned(self, top_30_object):
+I, [2020-01-16T16:37:22.261416 #8828]  INFO -- default-ubuntu-xenial64:       +            assert len(top_30_object.get_table_headers_array()) == 7
+I, [2020-01-16T16:37:22.261491 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.261576 #8828]  INFO -- default-ubuntu-xenial64:       +        def test_30_objects_returned_from_table_parser(self, top_30_object):
+I, [2020-01-16T16:37:22.262375 #8828]  INFO -- default-ubuntu-xenial64:       +            assert len(top_30_object.get_top_30_table_elements_into_array()) == 30
+I, [2020-01-16T16:37:22.263083 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.263603 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources] action create
+I, [2020-01-16T16:37:22.264220 #8828]  INFO -- default-ubuntu-xenial64:       - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources
+I, [2020-01-16T16:37:22.264461 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0755'
+I, [2020-01-16T16:37:22.264544 #8828]  INFO -- default-ubuntu-xenial64:       - change owner from '' to 'root'
+I, [2020-01-16T16:37:22.264794 #8828]  INFO -- default-ubuntu-xenial64:       - change group from '' to 'root'
+I, [2020-01-16T16:37:22.276496 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources/itjobswatch_home_page_stub.html] action create
+I, [2020-01-16T16:37:22.292505 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources/itjobswatch_home_page_stub.html
+I, [2020-01-16T16:37:22.292797 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources/itjobswatch_home_page_stub.html from none to b3ff45
+I, [2020-01-16T16:37:22.293082 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources/itjobswatch_home_page_stub.html	2020-01-16 16:37:21.275086000 +0000
+I, [2020-01-16T16:37:22.293276 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/tests/test_resources/.chef-itjobswatch_home_page_stub20200116-17667-1emgn2r.html	2020-01-16 16:37:21.275086000 +0000
+I, [2020-01-16T16:37:22.293467 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,252 @@
+I, [2020-01-16T16:37:22.293600 #8828]  INFO -- default-ubuntu-xenial64:       +<!DOCTYPE html>
+I, [2020-01-16T16:37:22.293766 #8828]  INFO -- default-ubuntu-xenial64:       +<html lang="en">
+I, [2020-01-16T16:37:22.295256 #8828]  INFO -- default-ubuntu-xenial64:       +<head>
+I, [2020-01-16T16:37:22.296165 #8828]  INFO -- default-ubuntu-xenial64:       +    <meta charset="utf-8" />
+I, [2020-01-16T16:37:22.296814 #8828]  INFO -- default-ubuntu-xenial64:       +    <title>IT Jobs Watch | Job Market Insights and Trends</title>
+I, [2020-01-16T16:37:22.297172 #8828]  INFO -- default-ubuntu-xenial64:       +    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+I, [2020-01-16T16:37:22.297457 #8828]  INFO -- default-ubuntu-xenial64:       +    <meta name="viewport" content="width=device-width, initial-scale=1">
+I, [2020-01-16T16:37:22.297738 #8828]  INFO -- default-ubuntu-xenial64:       +    <meta name="description" content="Research the IT labour market, latest technology skill trends, national and regional salary benchmarking, search thousands of IT job vacancies" />
+I, [2020-01-16T16:37:22.297855 #8828]  INFO -- default-ubuntu-xenial64:       +    <link rel="canonical" href="https://www.itjobswatch.co.uk/" />
+I, [2020-01-16T16:37:22.298548 #8828]  INFO -- default-ubuntu-xenial64:       +    <meta name="HandheldFriendly" content="true" />
+I, [2020-01-16T16:37:22.298757 #8828]  INFO -- default-ubuntu-xenial64:       +<meta name="twitter:site" content="@ITJobsWatch" />
+I, [2020-01-16T16:37:22.298842 #8828]  INFO -- default-ubuntu-xenial64:       +<link rel="apple-touch-icon" sizes="144x144" href="/static/img/shared/app/apple-touch-icon.png" />
+I, [2020-01-16T16:37:22.298930 #8828]  INFO -- default-ubuntu-xenial64:       +<meta name="apple-mobile-web-app-title" content="IT Jobs Watch" />
+I, [2020-01-16T16:37:22.299022 #8828]  INFO -- default-ubuntu-xenial64:       +<meta name="application-name" content="IT Jobs Watch" />
+I, [2020-01-16T16:37:22.299102 #8828]  INFO -- default-ubuntu-xenial64:       +<meta name="msapplication-TileColor" content="#f1f4f8" />
+I, [2020-01-16T16:37:22.299178 #8828]  INFO -- default-ubuntu-xenial64:       +<meta name="msapplication-TileImage" content="/static/img/shared/app/itjobswatch-tile.png" />
+I, [2020-01-16T16:37:22.299251 #8828]  INFO -- default-ubuntu-xenial64:       +<link rel="search" type="application/opensearchdescription+xml" title="IT Jobs Watch" href="/opensearch.xml" />
+I, [2020-01-16T16:37:22.299329 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:site_name" content="IT Jobs Watch" />
+I, [2020-01-16T16:37:22.299404 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:image" content="https://www.itjobswatch.co.uk/static/img/shared/itjobswatch.png" />
+I, [2020-01-16T16:37:22.299605 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:type" content="website" />
+I, [2020-01-16T16:37:22.299694 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:title" content="IT Jobs Watch | Tracking the IT job market" />
+I, [2020-01-16T16:37:22.299790 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:description" content="Research the IT labour market, latest technology skill trends, national and regional salary benchmarking, search thousands of IT job vacancies" />
+I, [2020-01-16T16:37:22.299948 #8828]  INFO -- default-ubuntu-xenial64:       +<meta property="og:url" content="https://www.itjobswatch.co.uk/" />
+I, [2020-01-16T16:37:22.300045 #8828]  INFO -- default-ubuntu-xenial64:       +<link href="/styles/itjw-results?v=Vb0dl6c6NPLnQywHImbWBNpGfvuVV8DOggoqWc5Ql6Q1" rel="stylesheet"/>
+I, [2020-01-16T16:37:22.300197 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.300291 #8828]  INFO -- default-ubuntu-xenial64:       +    <script src="/scripts/libs-v17.min.js"></script>
+I, [2020-01-16T16:37:22.302511 #8828]  INFO -- default-ubuntu-xenial64:       +    <script src="/static/wc/webcomponentsjs/webcomponents-lite.min.js"></script>
+I, [2020-01-16T16:37:22.302820 #8828]  INFO -- default-ubuntu-xenial64:       +    <link rel="import" href="/static/wc/itjw/itjw-ba-slot1.html">
+I, [2020-01-16T16:37:22.303021 #8828]  INFO -- default-ubuntu-xenial64:       +    <script src="/scripts/itjw-results?v=95p6K7rdr2NNvVTwBLBZAXdp2hxxGexw7ibVil8qatU1"></script>
+I, [2020-01-16T16:37:22.303202 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.303313 #8828]  INFO -- default-ubuntu-xenial64:       +</head>
+I, [2020-01-16T16:37:22.303494 #8828]  INFO -- default-ubuntu-xenial64:       +<body>
+I, [2020-01-16T16:37:22.303756 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="centerBody">
+I, [2020-01-16T16:37:22.303949 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.304129 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.304276 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.304366 #8828]  INFO -- default-ubuntu-xenial64:       +        <table class="pageHeader" role="banner">
+I, [2020-01-16T16:37:22.304516 #8828]  INFO -- default-ubuntu-xenial64:       +            <tr>
+I, [2020-01-16T16:37:22.304602 #8828]  INFO -- default-ubuntu-xenial64:       +                <td class="logoContainer" itemscope="" itemtype="http://schema.org/Organization">
+I, [2020-01-16T16:37:22.304761 #8828]  INFO -- default-ubuntu-xenial64:       +                    <a itemprop="url" href="https://www.itjobswatch.co.uk">
+I, [2020-01-16T16:37:22.304850 #8828]  INFO -- default-ubuntu-xenial64:       +                        <img itemprop="logo" class="logo" src="/static/img/shared/itjobswatch-logo.svg" alt="IT Jobs Watch Logo" /></a>
+I, [2020-01-16T16:37:22.305007 #8828]  INFO -- default-ubuntu-xenial64:       +                </td>
+I, [2020-01-16T16:37:22.305090 #8828]  INFO -- default-ubuntu-xenial64:       +                <td class="navContainer">
+I, [2020-01-16T16:37:22.305232 #8828]  INFO -- default-ubuntu-xenial64:       +                    <h1 id="ctl00_h1">IT Jobs Watch • Tracking the IT job market</h1>
+I, [2020-01-16T16:37:22.305323 #8828]  INFO -- default-ubuntu-xenial64:       +                    <table class="navInnerContainer">
+I, [2020-01-16T16:37:22.305527 #8828]  INFO -- default-ubuntu-xenial64:       +                        <tr>
+I, [2020-01-16T16:37:22.305664 #8828]  INFO -- default-ubuntu-xenial64:       +                            <td class="navTabsContainer">
+I, [2020-01-16T16:37:22.307633 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.307848 #8828]  INFO -- default-ubuntu-xenial64:       +    <ul class="navTabs navTabsTop" role="navigation">
+I, [2020-01-16T16:37:22.307983 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.308129 #8828]  INFO -- default-ubuntu-xenial64:       +        <li><a id="tabITJobs" href="/IT-Jobs">30,196 Job Vacancies</a></li>
+I, [2020-01-16T16:37:22.308217 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.308985 #8828]  INFO -- default-ubuntu-xenial64:       +        <li><a id="tabCVUpload" href="/cv">CV Upload</a></li>
+I, [2020-01-16T16:37:22.309211 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.309649 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.309860 #8828]  INFO -- default-ubuntu-xenial64:       +        <li><a id="tabAbout" href="/about.aspx">About Us</a></li>
+I, [2020-01-16T16:37:22.309990 #8828]  INFO -- default-ubuntu-xenial64:       +    </ul>
+I, [2020-01-16T16:37:22.310063 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.310135 #8828]  INFO -- default-ubuntu-xenial64:       +                                <div class="clear"></div>
+I, [2020-01-16T16:37:22.310975 #8828]  INFO -- default-ubuntu-xenial64:       +                            </td>
+I, [2020-01-16T16:37:22.312061 #8828]  INFO -- default-ubuntu-xenial64:       +                        </tr>
+I, [2020-01-16T16:37:22.312259 #8828]  INFO -- default-ubuntu-xenial64:       +                    </table>
+I, [2020-01-16T16:37:22.312350 #8828]  INFO -- default-ubuntu-xenial64:       +                </td>
+I, [2020-01-16T16:37:22.312509 #8828]  INFO -- default-ubuntu-xenial64:       +            </tr>
+I, [2020-01-16T16:37:22.312730 #8828]  INFO -- default-ubuntu-xenial64:       +        </table>
+I, [2020-01-16T16:37:22.313542 #8828]  INFO -- default-ubuntu-xenial64:       +        <table class="pageContent" role="main">
+I, [2020-01-16T16:37:22.313660 #8828]  INFO -- default-ubuntu-xenial64:       +            <tr>
+I, [2020-01-16T16:37:22.313755 #8828]  INFO -- default-ubuntu-xenial64:       +                <td class="resultsContainer">
+I, [2020-01-16T16:37:22.313802 #8828]  INFO -- default-ubuntu-xenial64:       +                    <ul class="navTabs navTabsJobType" role="navigation">
+I, [2020-01-16T16:37:22.313865 #8828]  INFO -- default-ubuntu-xenial64:       +                        <li><a href="/" id="ctl00_tabPermanent" class="currNavTab">Permanent IT Jobs</a></li>
+I, [2020-01-16T16:37:22.313924 #8828]  INFO -- default-ubuntu-xenial64:       +                        <li><a href="/Contract-IT-Job-Market" id="ctl00_tabContract" class="">Contract IT Jobs</a></li>
+I, [2020-01-16T16:37:22.313972 #8828]  INFO -- default-ubuntu-xenial64:       +                    </ul>
+I, [2020-01-16T16:37:22.314014 #8828]  INFO -- default-ubuntu-xenial64:       +                    <div class="clear">
+I, [2020-01-16T16:37:22.314075 #8828]  INFO -- default-ubuntu-xenial64:       +                    </div>
+I, [2020-01-16T16:37:22.314144 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.314270 #8828]  INFO -- default-ubuntu-xenial64:       +    <form method="get" action="/default.aspx" id="jobSearch" name="js" role="search">
+I, [2020-01-16T16:37:22.314637 #8828]  INFO -- default-ubuntu-xenial64:       +        <div class="searchOpts">
+I, [2020-01-16T16:37:22.314724 #8828]  INFO -- default-ubuntu-xenial64:       +            <div class="input-group-search">
+I, [2020-01-16T16:37:22.315449 #8828]  INFO -- default-ubuntu-xenial64:       +                <div class="input-group">
+I, [2020-01-16T16:37:22.315588 #8828]  INFO -- default-ubuntu-xenial64:       +                    <input id="search" type="text" role="combobox" class="form-control" value="" maxlength="100" name="q" autocomplete="off" placeholder="Skills / Job Roles - Comma Separated">
+I, [2020-01-16T16:37:22.315697 #8828]  INFO -- default-ubuntu-xenial64:       +                </div>
+I, [2020-01-16T16:37:22.315774 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="input-group-btn">
+I, [2020-01-16T16:37:22.315855 #8828]  INFO -- default-ubuntu-xenial64:       +                    <button class="btn-default" type="submit">&nbsp;</button>
+I, [2020-01-16T16:37:22.315935 #8828]  INFO -- default-ubuntu-xenial64:       +                </span>
+I, [2020-01-16T16:37:22.316020 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.316196 #8828]  INFO -- default-ubuntu-xenial64:       +            <div class="input-group-location">
+I, [2020-01-16T16:37:22.316277 #8828]  INFO -- default-ubuntu-xenial64:       +                <div class="input-group">
+I, [2020-01-16T16:37:22.316365 #8828]  INFO -- default-ubuntu-xenial64:       +                    <input id="location" type="text" role="combobox" class="form-control" value="" maxlength="50" name="l" autocomplete="off" placeholder="Job Location">
+I, [2020-01-16T16:37:22.316526 #8828]  INFO -- default-ubuntu-xenial64:       +                </div>
+I, [2020-01-16T16:37:22.316619 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="input-group-btn">
+I, [2020-01-16T16:37:22.316860 #8828]  INFO -- default-ubuntu-xenial64:       +                    <button class="btn-default" type="submit">&nbsp;</button>
+I, [2020-01-16T16:37:22.317058 #8828]  INFO -- default-ubuntu-xenial64:       +                </span>
+I, [2020-01-16T16:37:22.317388 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.317526 #8828]  INFO -- default-ubuntu-xenial64:       +            <div id="cntCategory" class="input-group-category">
+I, [2020-01-16T16:37:22.318689 #8828]  INFO -- default-ubuntu-xenial64:       +                <div class="input-group">
+I, [2020-01-16T16:37:22.318820 #8828]  INFO -- default-ubuntu-xenial64:       +                    <div class="select-cnt">
+I, [2020-01-16T16:37:22.319600 #8828]  INFO -- default-ubuntu-xenial64:       +                        <select id="lstCategories" name="id"><option selected="selected" value="0">Any Category</option><option value="1400">Application Platforms</option><option value="100">Applications</option><option value="2200">Business Applications</option><option value="4000">Cloud Services</option><option value="1000">Communications &amp; Networking</option><option value="500">Database &amp; Business Intelligence</option><option value="1500">Development Applications</option><option value="3000">General</option><option value="2400">Job Titles</option><option value="1300">Libraries, Frameworks &amp; Software Standards</option><option value="2000">Miscellaneous</option><option value="800">Operating Systems</option><option value="700">Processes &amp; Methodologies</option><option value="900">Programming Languages</option><option value="1100">Qualifications</option><option value="1200">Quality Assurance &amp; Compliance</option><option value="2300">System Software</option><option value="2500">Systems Management</option><option value="300">Vendors</option></select>
+I, [2020-01-16T16:37:22.319687 #8828]  INFO -- default-ubuntu-xenial64:       +                    </div>
+I, [2020-01-16T16:37:22.319756 #8828]  INFO -- default-ubuntu-xenial64:       +                </div>
+I, [2020-01-16T16:37:22.319804 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.320252 #8828]  INFO -- default-ubuntu-xenial64:       +            <div class="clear"></div>
+I, [2020-01-16T16:37:22.320347 #8828]  INFO -- default-ubuntu-xenial64:       +        </div>
+I, [2020-01-16T16:37:22.320409 #8828]  INFO -- default-ubuntu-xenial64:       +        <div class="periodOpts">
+I, [2020-01-16T16:37:22.320468 #8828]  INFO -- default-ubuntu-xenial64:       +            <div><b>Period</b></div>
+I, [2020-01-16T16:37:22.320528 #8828]  INFO -- default-ubuntu-xenial64:       +            <label class="itjw-radio" for="period6Months">
+I, [2020-01-16T16:37:22.320586 #8828]  INFO -- default-ubuntu-xenial64:       +                <input type="radio" id="period6Months" class="itjw-radio__button" name="p" value="6" checked="checked">
+I, [2020-01-16T16:37:22.321019 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__label">6 months</span>
+I, [2020-01-16T16:37:22.321119 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__outer-circle"></span>
+I, [2020-01-16T16:37:22.321200 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__inner-circle"></span>
+I, [2020-01-16T16:37:22.321267 #8828]  INFO -- default-ubuntu-xenial64:       +            </label>
+I, [2020-01-16T16:37:22.321329 #8828]  INFO -- default-ubuntu-xenial64:       +            <label class="itjw-radio" for="period3Months">
+I, [2020-01-16T16:37:22.321416 #8828]  INFO -- default-ubuntu-xenial64:       +                <input type="radio" id="period3Months" class="itjw-radio__button" name="p" value="3" >
+I, [2020-01-16T16:37:22.321482 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__label">3 months</span>
+I, [2020-01-16T16:37:22.321546 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__outer-circle"></span>
+I, [2020-01-16T16:37:22.321609 #8828]  INFO -- default-ubuntu-xenial64:       +                <span class="itjw-radio__inner-circle"></span>
+I, [2020-01-16T16:37:22.321667 #8828]  INFO -- default-ubuntu-xenial64:       +            </label>
+I, [2020-01-16T16:37:22.321767 #8828]  INFO -- default-ubuntu-xenial64:       +            <div>to 15 August 2019</div>
+I, [2020-01-16T16:37:22.322457 #8828]  INFO -- default-ubuntu-xenial64:       +        </div>
+I, [2020-01-16T16:37:22.322667 #8828]  INFO -- default-ubuntu-xenial64:       +    </form>
+I, [2020-01-16T16:37:22.322807 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="resultsSummary">Results <b>1 - 30</b> of <b>9,764</b></div>
+I, [2020-01-16T16:37:22.322910 #8828]  INFO -- default-ubuntu-xenial64:       +    <table class="results">
+I, [2020-01-16T16:37:22.322992 #8828]  INFO -- default-ubuntu-xenial64:       +        <tr class="resultsHeader">
+I, [2020-01-16T16:37:22.323081 #8828]  INFO -- default-ubuntu-xenial64:       +	<th class="noSort">&nbsp;</th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=1&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Skill / Job Role<div class="headerHelp">(Historical trends &amp; salary statistics)</div></div></a></th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=6&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Rank<div class="headerHelp">6 Months to<br>15 Aug 2019</div></div></a></th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=2&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Rank<br>Change<div class="headerHelp">Year-on-Year</div></div></a></th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=3&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Median Salary<div class="headerHelp">6 Months to<br>15 Aug 2019</div></div></a></th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=4&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Median Salary<br>% Change<div class="headerHelp">Year-on-Year</div></div></a></th><th><a title="Sort" href="/default.aspx?page=1&amp;sortby=5&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618"><div>Historical<br>Permanent<br>Job Ads</div></a></th><th class="findJobsHdr noSort">Live<br>Job<br>Vacancies</th>
+I, [2020-01-16T16:37:22.323164 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.323240 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Agile Software Development jobs" href="/jobs/uk/agile%20software%20development.do">Agile Software Development</a></td><td class="c3">1</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£55,000</td><td class="c6">+4.76%</td><td class="c7">43,032 (30.33%)</td><td class="c8"><a title="Search 6,503 Agile Software Development vacancies" href="/find/Agile-Software-Development-jobs">6,503</a></td>
+I, [2020-01-16T16:37:22.323317 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.323881 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Developer jobs" href="/jobs/uk/developer.do">Developer</a></td><td class="c3">2</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£50,000</td><td class="c6">-</td><td class="c7">38,654 (27.25%)</td><td class="c8"><a title="Search 8,556 Developer vacancies" href="/find/Developer-jobs">8,556</a></td>
+I, [2020-01-16T16:37:22.324005 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.324087 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Financial jobs" href="/jobs/uk/finance.do">Finance</a></td><td class="c3">3</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£60,000</td><td class="c6">+9.09%</td><td class="c7">26,977 (19.02%)</td><td class="c8"><a title="Search 4,223 Finance vacancies" href="/find/Finance-jobs">4,223</a></td>
+I, [2020-01-16T16:37:22.324428 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.324676 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="SQL (Structured Query Language) jobs" href="/jobs/uk/sql.do">SQL</a></td><td class="c3">4</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">26,838 (18.92%)</td><td class="c8"><a title="Search 4,708 SQL vacancies" href="/find/SQL-jobs">4,708</a></td>
+I, [2020-01-16T16:37:22.324789 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.324898 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 1 place"></span></td><td class="c2"><a title="Microsoft jobs" href="/jobs/uk/microsoft.do">Microsoft</a></td><td class="c3">5</td><td class="c4"><span class="rankChg rankUp" title="Up 1 place"></span>+1</td><td class="c5">£45,000</td><td class="c6">-</td><td class="c7">23,241 (16.38%)</td><td class="c8"><a title="Search 5,761 Microsoft vacancies" href="/find/Microsoft-jobs">5,761</a></td>
+I, [2020-01-16T16:37:22.325006 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.325076 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="JavaScript (including ECMAScript) jobs" href="/jobs/uk/javascript.do">JavaScript</a></td><td class="c3">6</td><td class="c4"><span class="rankChg rankDown" title="Down -1 place"></span>-1</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">23,189 (16.35%)</td><td class="c8"><a title="Search 4,982 JavaScript vacancies" href="/find/JavaScript-jobs">4,982</a></td>
+I, [2020-01-16T16:37:22.325138 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.325185 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="C# jobs" href="/jobs/uk/csharp.do">C#</a></td><td class="c3">7</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">21,664 (15.27%)</td><td class="c8"><a title="Search 4,236 C# vacancies" href="/find/CSharp-jobs">4,236</a></td>
+I, [2020-01-16T16:37:22.325230 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.325777 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Java jobs" href="/jobs/uk/java.do">Java</a></td><td class="c3">8</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£60,000</td><td class="c6">+5.26%</td><td class="c7">20,358 (14.35%)</td><td class="c8"><a title="Search 3,405 Java vacancies" href="/find/Java-jobs">3,405</a></td>
+I, [2020-01-16T16:37:22.325889 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.325989 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 10 places"></span></td><td class="c2"><a title="Microsoft Azure (formerly Windows Azure) jobs" href="/jobs/uk/microsoft%20azure.do">Microsoft Azure</a></td><td class="c3">9</td><td class="c4"><span class="rankChg rankUp" title="Up 10 places"></span>+10</td><td class="c5">£55,000</td><td class="c6">-</td><td class="c7">19,224 (13.55%)</td><td class="c8"><a title="Search 3,467 Microsoft Azure vacancies" href="/find/Microsoft-Azure-jobs">3,467</a></td>
+I, [2020-01-16T16:37:22.326128 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.326218 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Microsoft .NET (dotNet) jobs" href="/jobs/uk/.net.do">.NET</a></td><td class="c3">10</td><td class="c4"><span class="rankChg rankDown" title="Down -1 place"></span>-1</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">19,065 (13.44%)</td><td class="c8"><a title="Search 3,718 .NET vacancies" href="/find/dot-NET-jobs">3,718</a></td>
+I, [2020-01-16T16:37:22.326290 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.326408 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Microsoft Windows jobs" href="/jobs/uk/windows.do">Windows</a></td><td class="c3">11</td><td class="c4"><span class="rankChg rankNoc" title="No change"></span>0</td><td class="c5">£40,000</td><td class="c6">-</td><td class="c7">18,687 (13.17%)</td><td class="c8"><a title="Search 3,904 Windows vacancies" href="/find/Windows-jobs">3,904</a></td>
+I, [2020-01-16T16:37:22.326749 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.326988 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 1 place"></span></td><td class="c2"><a title="Analyst jobs" href="/jobs/uk/analyst.do">Analyst</a></td><td class="c3">12</td><td class="c4"><span class="rankChg rankUp" title="Up 1 place"></span>+1</td><td class="c5">£40,000</td><td class="c6">-</td><td class="c7">17,888 (12.61%)</td><td class="c8"><a title="Search 2,149 Analyst vacancies" href="/find/Analyst-jobs">2,149</a></td>
+I, [2020-01-16T16:37:22.327150 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.327306 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 7 places"></span></td><td class="c2"><a title="Amazon Web Services (AWS) jobs" href="/jobs/uk/amazon%20aws.do">Amazon AWS</a></td><td class="c3">13</td><td class="c4"><span class="rankChg rankUp" title="Up 7 places"></span>+7</td><td class="c5">£62,500</td><td class="c6">+4.16%</td><td class="c7">16,793 (11.84%)</td><td class="c8"><a title="Search 3,031 Amazon AWS vacancies" href="/find/Amazon-AWS-jobs">3,031</a></td>
+I, [2020-01-16T16:37:22.327376 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.327492 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 4 places"></span></td><td class="c2"><a title="Python jobs" href="/jobs/uk/python.do">Python</a></td><td class="c3">14</td><td class="c4"><span class="rankChg rankUp" title="Up 4 places"></span>+4</td><td class="c5">£60,000</td><td class="c6">+4.34%</td><td class="c7">16,065 (11.32%)</td><td class="c8"><a title="Search 2,752 Python vacancies" href="/find/Python-jobs">2,752</a></td>
+I, [2020-01-16T16:37:22.327618 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.327691 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Academic Degree jobs" href="/jobs/uk/degree.do">Degree</a></td><td class="c3">15</td><td class="c4"><span class="rankChg rankDown" title="Down -1 place"></span>-1</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">16,045 (11.31%)</td><td class="c8"><a title="Search 3,764 Degree vacancies" href="/find/Degree-jobs">3,764</a></td>
+I, [2020-01-16T16:37:22.327896 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.329082 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Microsoft SQL Server (MS SQL) jobs" href="/jobs/uk/sql%20server.do">SQL Server</a></td><td class="c3">16</td><td class="c4"><span class="rankChg rankDown" title="Down -6 places"></span>-6</td><td class="c5">£47,500</td><td class="c6">+5.55%</td><td class="c7">15,813 (11.15%)</td><td class="c8"><a title="Search 2,926 SQL Server vacancies" href="/find/SQL-Server-jobs">2,926</a></td>
+I, [2020-01-16T16:37:22.329183 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.329253 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="HTML (including XHTML, DHTML &amp; HTML5) jobs" href="/jobs/uk/html.do">HTML</a></td><td class="c3">17</td><td class="c4"><span class="rankChg rankDown" title="Down -5 places"></span>-5</td><td class="c5">£47,500</td><td class="c6">+5.55%</td><td class="c7">15,258 (10.76%)</td><td class="c8"><a title="Search 3,421 HTML vacancies" href="/find/HTML-jobs">3,421</a></td>
+I, [2020-01-16T16:37:22.329309 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.329369 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 9 places"></span></td><td class="c2"><a title="DevOps jobs" href="/jobs/uk/devops.do">DevOps</a></td><td class="c3">18</td><td class="c4"><span class="rankChg rankUp" title="Up 9 places"></span>+9</td><td class="c5">£62,500</td><td class="c6">-</td><td class="c7">15,087 (10.64%)</td><td class="c8"><a title="Search 2,684 DevOps vacancies" href="/find/DevOps-jobs">2,684</a></td>
+I, [2020-01-16T16:37:22.329669 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.329826 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Linux jobs" href="/jobs/uk/linux.do">Linux</a></td><td class="c3">19</td><td class="c4"><span class="rankChg rankDown" title="Down -3 places"></span>-3</td><td class="c5">£52,500</td><td class="c6">-</td><td class="c7">14,591 (10.29%)</td><td class="c8"><a title="Search 2,721 Linux vacancies" href="/find/Linux-jobs">2,721</a></td>
+I, [2020-01-16T16:37:22.329899 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.329965 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 2 places"></span></td><td class="c2"><a title="Software Engineering jobs" href="/jobs/uk/software%20engineering.do">Software Engineering</a></td><td class="c3">20</td><td class="c4"><span class="rankChg rankUp" title="Up 2 places"></span>+2</td><td class="c5">£55,000</td><td class="c6">+4.76%</td><td class="c7">14,552 (10.26%)</td><td class="c8"><a title="Search 2,966 Software Engineering vacancies" href="/find/Software-Engineering-jobs">2,966</a></td>
+I, [2020-01-16T16:37:22.330105 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.330172 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Problem-Solving jobs" href="/jobs/uk/problem-solving.do">Problem-Solving</a></td><td class="c3">21</td><td class="c4"><span class="rankChg rankDown" title="Down -4 places"></span>-4</td><td class="c5">£47,500</td><td class="c6">-</td><td class="c7">14,349 (10.11%)</td><td class="c8"><a title="Search 3,088 Problem-Solving vacancies" href="/find/Problem-Solving-jobs">3,088</a></td>
+I, [2020-01-16T16:37:22.330275 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.330408 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="CSS (Cascading Style Sheets) jobs" href="/jobs/uk/css.do">CSS</a></td><td class="c3">22</td><td class="c4"><span class="rankChg rankDown" title="Down -7 places"></span>-7</td><td class="c5">£47,500</td><td class="c6">+5.55%</td><td class="c7">13,700 (9.66%)</td><td class="c8"><a title="Search 3,172 CSS vacancies" href="/find/CSS-jobs">3,172</a></td>
+I, [2020-01-16T16:37:22.330539 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.330606 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Scrum jobs" href="/jobs/uk/scrum.do">Scrum</a></td><td class="c3">23</td><td class="c4"><span class="rankChg rankDown" title="Down -2 places"></span>-2</td><td class="c5">£55,000</td><td class="c6">-</td><td class="c7">11,870 (8.37%)</td><td class="c8"><a title="Search 1,920 Scrum vacancies" href="/find/Scrum-jobs">1,920</a></td>
+I, [2020-01-16T16:37:22.331081 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.331348 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 2 places"></span></td><td class="c2"><a title="Analytical Skills jobs" href="/jobs/uk/analytical%20skills.do">Analytical Skills</a></td><td class="c3">24</td><td class="c4"><span class="rankChg rankUp" title="Up 2 places"></span>+2</td><td class="c5">£50,000</td><td class="c6">+5.26%</td><td class="c7">11,274 (7.95%)</td><td class="c8"><a title="Search 1,918 Analytical Skills vacancies" href="/find/Analytical-Skills-jobs">1,918</a></td>
+I, [2020-01-16T16:37:22.331472 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.332777 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 9 places"></span></td><td class="c2"><a title="Microsoft Active Directory jobs" href="/jobs/uk/active%20directory.do">Active Directory</a></td><td class="c3">25</td><td class="c4"><span class="rankChg rankUp" title="Up 9 places"></span>+9</td><td class="c5">£37,500</td><td class="c6">+5.63%</td><td class="c7">10,497 (7.40%)</td><td class="c8"><a title="Search 2,023 Active Directory vacancies" href="/find/Active-Directory-jobs">2,023</a></td>
+I, [2020-01-16T16:37:22.333016 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.333146 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 6 places"></span></td><td class="c2"><a title="IT Infrastructure Library (ITIL) jobs" href="/jobs/uk/itil.do">ITIL</a></td><td class="c3">26</td><td class="c4"><span class="rankChg rankUp" title="Up 6 places"></span>+6</td><td class="c5">£45,000</td><td class="c6">-</td><td class="c7">10,043 (7.08%)</td><td class="c8"><a title="Search 1,292 ITIL vacancies" href="/find/ITIL-jobs">1,292</a></td>
+I, [2020-01-16T16:37:22.333203 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.333318 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 3 places"></span></td><td class="c2"><a title="Git Distributed Version Control System jobs" href="/jobs/uk/git%20(software).do">Git (software)</a></td><td class="c3">27</td><td class="c4"><span class="rankChg rankUp" title="Up 3 places"></span>+3</td><td class="c5">£50,000</td><td class="c6">-</td><td class="c7">9,951 (7.01%)</td><td class="c8"><a title="Search 2,083 Git (software) vacancies" href="/find/Git-software-jobs">2,083</a></td>
+I, [2020-01-16T16:37:22.333377 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.333755 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Angular jobs" href="/jobs/uk/angularjs.do">AngularJS</a></td><td class="c3">28</td><td class="c4"><span class="rankChg rankDown" title="Down -3 places"></span>-3</td><td class="c5">£55,000</td><td class="c6">+10.00%</td><td class="c7">9,764 (6.88%)</td><td class="c8"><a title="Search 2,069 AngularJS vacancies" href="/find/AngularJS-jobs">2,069</a></td>
+I, [2020-01-16T16:37:22.334837 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr>
+I, [2020-01-16T16:37:22.335297 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1">&nbsp;</td><td class="c2"><a title="Project Management jobs" href="/jobs/uk/project%20management.do">Project Management</a></td><td class="c3">29</td><td class="c4"><span class="rankChg rankDown" title="Down -1 place"></span>-1</td><td class="c5">£55,000</td><td class="c6">+1.85%</td><td class="c7">9,744 (6.87%)</td><td class="c8"><a title="Search 1,606 Project Management vacancies" href="/find/Project-Management-jobs">1,606</a></td>
+I, [2020-01-16T16:37:22.335380 #8828]  INFO -- default-ubuntu-xenial64:       +</tr><tr class="alt">
+I, [2020-01-16T16:37:22.335453 #8828]  INFO -- default-ubuntu-xenial64:       +	<td class="c1"><span class="demandInd fair" title="Up 1 place"></span></td><td class="c2"><a title="Automated Testing jobs" href="/jobs/uk/test%20automation.do">Test Automation</a></td><td class="c3">30</td><td class="c4"><span class="rankChg rankUp" title="Up 1 place"></span>+1</td><td class="c5">£50,000</td><td class="c6">-</td><td class="c7">9,690 (6.83%)</td><td class="c8"><a title="Search 1,604 Test Automation vacancies" href="/find/Test-Automation-jobs">1,604</a></td>
+I, [2020-01-16T16:37:22.335521 #8828]  INFO -- default-ubuntu-xenial64:       +</tr>
+I, [2020-01-16T16:37:22.335726 #8828]  INFO -- default-ubuntu-xenial64:       +    </table>
+I, [2020-01-16T16:37:22.335828 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="pagination stats"><table>
+I, [2020-01-16T16:37:22.336031 #8828]  INFO -- default-ubuntu-xenial64:       +	<tr>
+I, [2020-01-16T16:37:22.336147 #8828]  INFO -- default-ubuntu-xenial64:       +		<td class="indexCnt"><span>1</span><a href="/default.aspx?page=2&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">2</a><a href="/default.aspx?page=3&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">3</a><a href="/default.aspx?page=4&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">4</a><a href="/default.aspx?page=5&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">5</a><a href="/default.aspx?page=6&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">6</a><a href="/default.aspx?page=7&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">7</a><a href="/default.aspx?page=8&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">8</a><a href="/default.aspx?page=9&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">9</a><a href="/default.aspx?page=10&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">10</a></td>
+I, [2020-01-16T16:37:22.336265 #8828]  INFO -- default-ubuntu-xenial64:       +		<td class="next"><a href="/default.aspx?page=2&amp;sortby=0&amp;orderby=0&amp;q=&amp;id=0&amp;lid=2618">Next</a></td>
+I, [2020-01-16T16:37:22.336327 #8828]  INFO -- default-ubuntu-xenial64:       +	</tr>
+I, [2020-01-16T16:37:22.336448 #8828]  INFO -- default-ubuntu-xenial64:       +</table>
+I, [2020-01-16T16:37:22.336514 #8828]  INFO -- default-ubuntu-xenial64:       +</div>
+I, [2020-01-16T16:37:22.336716 #8828]  INFO -- default-ubuntu-xenial64:       +    <div id="ctl00_ContentPlaceHolderResults_Note" class="note">
+I, [2020-01-16T16:37:22.337848 #8828]  INFO -- default-ubuntu-xenial64:       +        The figures above represent the demand for knowledge and experience of skills in the IT labour market in general and are not representative of salaries within specific companies or organisations.
+I, [2020-01-16T16:37:22.338056 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.338127 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="jobsCnt">
+I, [2020-01-16T16:37:22.338293 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.338359 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.338562 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.338690 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.338753 #8828]  INFO -- default-ubuntu-xenial64:       +                </td>
+I, [2020-01-16T16:37:22.338892 #8828]  INFO -- default-ubuntu-xenial64:       +                <td class="rightCol">
+I, [2020-01-16T16:37:22.338967 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.339107 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.339163 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="gars">
+I, [2020-01-16T16:37:22.339351 #8828]  INFO -- default-ubuntu-xenial64:       +        <itjw-ba-slot1 ctx=""></itjw-ba-slot1>
+I, [2020-01-16T16:37:22.339476 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.339534 #8828]  INFO -- default-ubuntu-xenial64:       +                </td>
+I, [2020-01-16T16:37:22.339636 #8828]  INFO -- default-ubuntu-xenial64:       +            </tr>
+I, [2020-01-16T16:37:22.339734 #8828]  INFO -- default-ubuntu-xenial64:       +        </table>
+I, [2020-01-16T16:37:22.339870 #8828]  INFO -- default-ubuntu-xenial64:       +<div class="pageFooter" role="contentinfo">
+I, [2020-01-16T16:37:22.339929 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="links">
+I, [2020-01-16T16:37:22.340014 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/IT-Jobs">UK Job Vacancies</a><span>|</span>
+I, [2020-01-16T16:37:22.340110 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/privacy-policy.aspx">Privacy Policy</a><span>|</span>
+I, [2020-01-16T16:37:22.340169 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/cookies-policy">Cookies Policy</a><span>|</span>
+I, [2020-01-16T16:37:22.340282 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.340341 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/links/">Resources</a><span>|</span>
+I, [2020-01-16T16:37:22.340468 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.340530 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/copyright.aspx">Copyright</a><span>|</span>
+I, [2020-01-16T16:37:22.340681 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/disclaimer.aspx">Disclaimer</a><span>|</span>
+I, [2020-01-16T16:37:22.340744 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/about.aspx">About us</a><span>|</span>
+I, [2020-01-16T16:37:22.340853 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/contact.aspx">Contact us</a>
+I, [2020-01-16T16:37:22.340916 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.340974 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="notice">
+I, [2020-01-16T16:37:22.341082 #8828]  INFO -- default-ubuntu-xenial64:       +        Last Updated <b><time datetime="2019-08-15">Thursday 15 August 2019</time></b>
+I, [2020-01-16T16:37:22.341141 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.341228 #8828]  INFO -- default-ubuntu-xenial64:       +    <div>
+I, [2020-01-16T16:37:22.341329 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/">
+I, [2020-01-16T16:37:22.341455 #8828]  INFO -- default-ubuntu-xenial64:       +            <img src="/images/logo/itjobswatch-strap.png" alt="IT Jobs Watch, Tracking the IT Job Market" width="180" height="60" /></a>
+I, [2020-01-16T16:37:22.341579 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.341699 #8828]  INFO -- default-ubuntu-xenial64:       +    <div class="copyright">
+I, [2020-01-16T16:37:22.341759 #8828]  INFO -- default-ubuntu-xenial64:       +        <a href="/copyright.aspx">
+I, [2020-01-16T16:37:22.341864 #8828]  INFO -- default-ubuntu-xenial64:       +            <div>
+I, [2020-01-16T16:37:22.341924 #8828]  INFO -- default-ubuntu-xenial64:       +                2004-2019 IT Jobs Watch Ltd. Some rights reserved
+I, [2020-01-16T16:37:22.341981 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.342092 #8828]  INFO -- default-ubuntu-xenial64:       +            <div>
+I, [2020-01-16T16:37:22.342153 #8828]  INFO -- default-ubuntu-xenial64:       +                Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+I, [2020-01-16T16:37:22.342264 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.342322 #8828]  INFO -- default-ubuntu-xenial64:       +            <div>
+I, [2020-01-16T16:37:22.342386 #8828]  INFO -- default-ubuntu-xenial64:       +                <img id="creativecommonslogo" src="/static/img/shared/by-nc-sa.svg" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" />
+I, [2020-01-16T16:37:22.342496 #8828]  INFO -- default-ubuntu-xenial64:       +            </div>
+I, [2020-01-16T16:37:22.342558 #8828]  INFO -- default-ubuntu-xenial64:       +        </a>
+I, [2020-01-16T16:37:22.342670 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.342729 #8828]  INFO -- default-ubuntu-xenial64:       +</div>
+I, [2020-01-16T16:37:22.342847 #8828]  INFO -- default-ubuntu-xenial64:       +    </div>
+I, [2020-01-16T16:37:22.342910 #8828]  INFO -- default-ubuntu-xenial64:       +<script src="https://cc.cdn.civiccomputing.com/8/cookieControl-8.1.min.js" integrity="sha384-IxNAc6VrSYlLpEtwbpn1msykm1vI7qz2tFIop4jpqao0JuugIBqryEStDNP9rfIQ" crossorigin="anonymous"></script>
+I, [2020-01-16T16:37:22.343054 #8828]  INFO -- default-ubuntu-xenial64:       +<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119929-1"></script>
+I, [2020-01-16T16:37:22.343158 #8828]  INFO -- default-ubuntu-xenial64:       +<script src="/static/js/cc.js"></script>
+I, [2020-01-16T16:37:22.343328 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.343467 #8828]  INFO -- default-ubuntu-xenial64:       +</body>
+I, [2020-01-16T16:37:22.345840 #8828]  INFO -- default-ubuntu-xenial64:       +</html>
+I, [2020-01-16T16:37:22.346126 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.346418 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers] action create
+I, [2020-01-16T16:37:22.346830 #8828]  INFO -- default-ubuntu-xenial64:       - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers
+I, [2020-01-16T16:37:22.347145 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0755'
+I, [2020-01-16T16:37:22.347268 #8828]  INFO -- default-ubuntu-xenial64:       - change owner from '' to 'root'
+I, [2020-01-16T16:37:22.347751 #8828]  INFO -- default-ubuntu-xenial64:       - change group from '' to 'root'
+I, [2020-01-16T16:37:22.348130 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers/itjobswatch_home_page_top_30.py] action create
+I, [2020-01-16T16:37:22.348439 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers/itjobswatch_home_page_top_30.py
+I, [2020-01-16T16:37:22.348583 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers/itjobswatch_home_page_top_30.py from none to ab6b21
+I, [2020-01-16T16:37:22.348723 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers/itjobswatch_home_page_top_30.py	2020-01-16 16:37:21.307102000 +0000
+I, [2020-01-16T16:37:22.348859 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/itjobswatch_html_readers/.chef-itjobswatch_home_page_top_3020200116-17667-140z8w5.py	2020-01-16 16:37:21.307102000 +0000
+I, [2020-01-16T16:37:22.348984 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,45 @@
+I, [2020-01-16T16:37:22.349086 #8828]  INFO -- default-ubuntu-xenial64:       +from bs4 import BeautifulSoup
+I, [2020-01-16T16:37:22.349212 #8828]  INFO -- default-ubuntu-xenial64:       +from src.html_object_manager import HtmlObjectManager
+I, [2020-01-16T16:37:22.349336 #8828]  INFO -- default-ubuntu-xenial64:       +from config_manager import itjobswatch_home_page_url, itjobswatch_home_page_test_file
+I, [2020-01-16T16:37:22.349406 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.349546 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.349616 #8828]  INFO -- default-ubuntu-xenial64:       +class ItJobsWatchHomePageTop30:
+I, [2020-01-16T16:37:22.349725 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.349844 #8828]  INFO -- default-ubuntu-xenial64:       +    def __init__(self, file_or_url_address):
+I, [2020-01-16T16:37:22.349951 #8828]  INFO -- default-ubuntu-xenial64:       +        self._html_manager = HtmlObjectManager(file_or_url_address)
+I, [2020-01-16T16:37:22.350092 #8828]  INFO -- default-ubuntu-xenial64:       +        self.home_page_html = BeautifulSoup(self._html_manager.html, 'html.parser')
+I, [2020-01-16T16:37:22.350209 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.350334 #8828]  INFO -- default-ubuntu-xenial64:       +    def _get_top_30_table(self):
+I, [2020-01-16T16:37:22.350393 #8828]  INFO -- default-ubuntu-xenial64:       +        return self.home_page_html.find('table', class_="results")
+I, [2020-01-16T16:37:22.352194 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.352511 #8828]  INFO -- default-ubuntu-xenial64:       +    def _get_top_30_table_headers(self):
+I, [2020-01-16T16:37:22.352664 #8828]  INFO -- default-ubuntu-xenial64:       +        return self.home_page_html.find('tr', class_="resultsHeader")
+I, [2020-01-16T16:37:22.352771 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.352842 #8828]  INFO -- default-ubuntu-xenial64:       +    def get_table_headers_array(self):
+I, [2020-01-16T16:37:22.352976 #8828]  INFO -- default-ubuntu-xenial64:       +        table_headers_list = []
+I, [2020-01-16T16:37:22.353062 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.353144 #8828]  INFO -- default-ubuntu-xenial64:       +        for item in self._get_top_30_table_headers().find_all('th'):
+I, [2020-01-16T16:37:22.353214 #8828]  INFO -- default-ubuntu-xenial64:       +            table_headers_list.append(item.text)
+I, [2020-01-16T16:37:22.353355 #8828]  INFO -- default-ubuntu-xenial64:       +        table_headers_list.pop(0)
+I, [2020-01-16T16:37:22.353407 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.353450 #8828]  INFO -- default-ubuntu-xenial64:       +        return table_headers_list
+I, [2020-01-16T16:37:22.353532 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.353585 #8828]  INFO -- default-ubuntu-xenial64:       +    def get_top_30_table_elements_into_array(self):
+I, [2020-01-16T16:37:22.353648 #8828]  INFO -- default-ubuntu-xenial64:       +        job_list = []
+I, [2020-01-16T16:37:22.353696 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.353740 #8828]  INFO -- default-ubuntu-xenial64:       +        for elements in self._get_top_30_table().find_all('tr'):
+I, [2020-01-16T16:37:22.353782 #8828]  INFO -- default-ubuntu-xenial64:       +            job = []
+I, [2020-01-16T16:37:22.353824 #8828]  INFO -- default-ubuntu-xenial64:       +            for job_row_items in elements.find_all('td'):
+I, [2020-01-16T16:37:22.353866 #8828]  INFO -- default-ubuntu-xenial64:       +                if job_row_items.attrs['class'] != ['c1']:
+I, [2020-01-16T16:37:22.353908 #8828]  INFO -- default-ubuntu-xenial64:       +                    job.append(job_row_items.text)
+I, [2020-01-16T16:37:22.353963 #8828]  INFO -- default-ubuntu-xenial64:       +            job_list.append(job)
+I, [2020-01-16T16:37:22.354021 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.354844 #8828]  INFO -- default-ubuntu-xenial64:       +        job_list.pop(0)
+I, [2020-01-16T16:37:22.354966 #8828]  INFO -- default-ubuntu-xenial64:       +        return job_list
+I, [2020-01-16T16:37:22.355021 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.355076 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.355318 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.355435 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.355494 #8828]  INFO -- default-ubuntu-xenial64:       +    print(ItJobsWatchHomePageTop30(itjobswatch_home_page_test_file())._get_table_headers())
+I, [2020-01-16T16:37:22.355861 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.356022 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.356336 #8828]  INFO -- default-ubuntu-xenial64:     * directory[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators] action create
+I, [2020-01-16T16:37:22.356642 #8828]  INFO -- default-ubuntu-xenial64:       - create new directory /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators
+I, [2020-01-16T16:37:22.356744 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0755'
+I, [2020-01-16T16:37:22.356805 #8828]  INFO -- default-ubuntu-xenial64:       - change owner from '' to 'root'
+I, [2020-01-16T16:37:22.356851 #8828]  INFO -- default-ubuntu-xenial64:       - change group from '' to 'root'
+I, [2020-01-16T16:37:22.357141 #8828]  INFO -- default-ubuntu-xenial64:     * cookbook_file[/home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators/top_30_csv_generator.py] action create
+I, [2020-01-16T16:37:22.357320 #8828]  INFO -- default-ubuntu-xenial64:       - create new file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators/top_30_csv_generator.py
+I, [2020-01-16T16:37:22.357530 #8828]  INFO -- default-ubuntu-xenial64:       - update content in file /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators/top_30_csv_generator.py from none to 3c974f
+I, [2020-01-16T16:37:22.357597 #8828]  INFO -- default-ubuntu-xenial64:       --- /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators/top_30_csv_generator.py	2020-01-16 16:37:21.327111999 +0000
+I, [2020-01-16T16:37:22.357670 #8828]  INFO -- default-ubuntu-xenial64:       +++ /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/src/csv_generators/.chef-top_30_csv_generator20200116-17667-1uysf9f.py	2020-01-16 16:37:21.327111999 +0000
+I, [2020-01-16T16:37:22.357722 #8828]  INFO -- default-ubuntu-xenial64:       @@ -1 +1,16 @@
+I, [2020-01-16T16:37:22.357768 #8828]  INFO -- default-ubuntu-xenial64:       +import csv
+I, [2020-01-16T16:37:22.357825 #8828]  INFO -- default-ubuntu-xenial64:       +import os
+I, [2020-01-16T16:37:22.357883 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.357933 #8828]  INFO -- default-ubuntu-xenial64:       +class Top30CSVGenerator:
+I, [2020-01-16T16:37:22.357978 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.358154 #8828]  INFO -- default-ubuntu-xenial64:       +    def generate_top_30_csv(self, top_30_array, csv_file_location=os.path.expanduser('~/Downloads/'), file_name='ItJobsWatchTop30.csv', headers_array=None):
+I, [2020-01-16T16:37:22.358226 #8828]  INFO -- default-ubuntu-xenial64:       +        with open(csv_file_location + file_name, 'w+') as top30csv:
+I, [2020-01-16T16:37:22.358299 #8828]  INFO -- default-ubuntu-xenial64:       +            writer = csv.writer(top30csv)
+I, [2020-01-16T16:37:22.358379 #8828]  INFO -- default-ubuntu-xenial64:       +            if headers_array is not None:
+I, [2020-01-16T16:37:22.358430 #8828]  INFO -- default-ubuntu-xenial64:       +                writer.writerow(headers_array)
+I, [2020-01-16T16:37:22.358474 #8828]  INFO -- default-ubuntu-xenial64:       +            writer.writerows(top_30_array)
+I, [2020-01-16T16:37:22.358527 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.358586 #8828]  INFO -- default-ubuntu-xenial64:       +
+I, [2020-01-16T16:37:22.358632 #8828]  INFO -- default-ubuntu-xenial64:       +if __name__ == '__main__':
+I, [2020-01-16T16:37:22.359307 #8828]  INFO -- default-ubuntu-xenial64:       +    print()
+I, [2020-01-16T16:37:22.359473 #8828]  INFO -- default-ubuntu-xenial64:       - change mode from '' to '0644'
+I, [2020-01-16T16:37:22.359528 #8828]  INFO -- default-ubuntu-xenial64:   
+I, [2020-01-16T16:37:22.359572 #8828]  INFO -- default-ubuntu-xenial64: Recipe: it_jobs_cookbook::default
+I, [2020-01-16T16:37:30.623511 #8828]  INFO -- default-ubuntu-xenial64:   * apt_package[python-software-properties] action install
+I, [2020-01-16T16:37:30.623972 #8828]  INFO -- default-ubuntu-xenial64:     - install version 0.96.20.9 of package python-software-properties
+I, [2020-01-16T16:37:38.910814 #8828]  INFO -- default-ubuntu-xenial64:   * execute[pip3] action run
+I, [2020-01-16T16:37:38.911096 #8828]  INFO -- default-ubuntu-xenial64:     - execute pip3 install -r /home/ubuntu/it_jobs/cookbooks/it_jobs_chef/It_Jobs_Watch/requirements.txt
+I, [2020-01-16T16:37:38.911322 #8828]  INFO -- default-ubuntu-xenial64:   * directory[/home/vagrant/Downloads] action create
+I, [2020-01-16T16:37:38.911575 #8828]  INFO -- default-ubuntu-xenial64:     - create new directory /home/vagrant/Downloads
+I, [2020-01-16T16:37:38.922715 #8828]  INFO -- default-ubuntu-xenial64:   * file[/home/vagrant/Downloads/ItJobsWatchTop30.csv] action create
+I, [2020-01-16T16:37:38.923592 #8828]  INFO -- default-ubuntu-xenial64:     - create new file /home/vagrant/Downloads/ItJobsWatchTop30.csv
+I, [2020-01-16T16:37:38.924271 #8828]  INFO -- default-ubuntu-xenial64:     - change mode from '' to '0777'
+I, [2020-01-16T16:37:39.010177 #8828]  INFO -- default-ubuntu-xenial64: 
+I, [2020-01-16T16:37:39.010987 #8828]  INFO -- default-ubuntu-xenial64: Running handlers:
+I, [2020-01-16T16:37:39.011701 #8828]  INFO -- default-ubuntu-xenial64: Running handlers complete
+I, [2020-01-16T16:37:39.012370 #8828]  INFO -- default-ubuntu-xenial64: Chef Infra Client finished, 30/33 resources updated in 01 minutes 00 seconds
+I, [2020-01-16T16:37:39.045205 #8828]  INFO -- default-ubuntu-xenial64: Downloading files from <default-ubuntu-xenial64>
+I, [2020-01-16T16:37:39.122615 #8828]  INFO -- default-ubuntu-xenial64: Finished converging <default-ubuntu-xenial64> (1m32.45s).
+I, [2020-01-16T16:37:39.123133 #8828]  INFO -- default-ubuntu-xenial64: -----> Setting up <default-ubuntu-xenial64>...
+I, [2020-01-16T16:37:39.126690 #8828]  INFO -- default-ubuntu-xenial64: Finished setting up <default-ubuntu-xenial64> (0m0.00s).
+I, [2020-01-16T16:37:39.127118 #8828]  INFO -- default-ubuntu-xenial64: -----> Verifying <default-ubuntu-xenial64>...
+I, [2020-01-16T16:37:39.848583 #8828]  INFO -- default-ubuntu-xenial64: Loaded tests from {:path=>"C:.Users.Chef.it_job.cookbooks.it_jobs_chef.test.integration.default"} 
+E, [2020-01-16T16:37:40.369284 #8828] ERROR -- default-ubuntu-xenial64: Verify failed on instance <default-ubuntu-xenial64>.
+E, [2020-01-16T16:37:40.369441 #8828] ERROR -- default-ubuntu-xenial64: ------Exception-------
+E, [2020-01-16T16:37:40.369636 #8828] ERROR -- default-ubuntu-xenial64: Class: Kitchen::ActionFailed
+E, [2020-01-16T16:37:40.369768 #8828] ERROR -- default-ubuntu-xenial64: Message: InSpec Runner returns 1
+E, [2020-01-16T16:37:40.369908 #8828] ERROR -- default-ubuntu-xenial64: ----------------------
+E, [2020-01-16T16:37:40.370038 #8828] ERROR -- default-ubuntu-xenial64: ------Backtrace-------
+E, [2020-01-16T16:37:40.370169 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-inspec-1.3.1/lib/kitchen/verifier/inspec.rb:98:in `call'
+E, [2020-01-16T16:37:40.370303 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:459:in `block in verify_action'
+E, [2020-01-16T16:37:40.370435 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:552:in `synchronize_or_call'
+E, [2020-01-16T16:37:40.370610 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:514:in `block in action'
+E, [2020-01-16T16:37:40.370810 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2020-01-16T16:37:40.370918 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:513:in `action'
+E, [2020-01-16T16:37:40.371052 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:451:in `verify_action'
+E, [2020-01-16T16:37:40.371191 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2020-01-16T16:37:40.371327 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2020-01-16T16:37:40.371464 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2020-01-16T16:37:40.371595 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `each'
+E, [2020-01-16T16:37:40.371643 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2020-01-16T16:37:40.371686 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:162:in `verify'
+E, [2020-01-16T16:37:40.371840 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `public_send'
+E, [2020-01-16T16:37:40.372012 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `run_action_in_thread'
+E, [2020-01-16T16:37:40.372112 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2020-01-16T16:37:40.372206 #8828] ERROR -- default-ubuntu-xenial64: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2020-01-16T16:37:40.372308 #8828] ERROR -- default-ubuntu-xenial64: ----End Backtrace-----
